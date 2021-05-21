@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,13 @@
 		7662A02A2657A476008E8731 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0292657A476008E8731 /* main.m */; };
 		7662A0342657A476008E8731 /* DensityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0332657A476008E8731 /* DensityTests.m */; };
 		7662A03F2657A476008E8731 /* DensityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A03E2657A476008E8731 /* DensityUITests.m */; };
+		7662A0772657A4F3008E8731 /* MDChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0662657A4F3008E8731 /* MDChatViewController.m */; };
+		7662A0782657A4F3008E8731 /* MDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A06A2657A4F3008E8731 /* MDRootViewController.m */; };
+		7662A0792657A4F3008E8731 /* MDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A06B2657A4F3008E8731 /* MDBaseViewController.m */; };
+		7662A07A2657A4F3008E8731 /* MDBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A06C2657A4F3008E8731 /* MDBaseTabBarController.m */; };
+		7662A07B2657A4F3008E8731 /* MDBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A06D2657A4F3008E8731 /* MDBaseNavigationController.m */; };
+		7662A07C2657A4F3008E8731 /* MDRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0732657A4F3008E8731 /* MDRecordViewController.m */; };
+		7662A07D2657A4F3008E8731 /* MDWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0752657A4F3008E8731 /* MDWordViewController.m */; };
 		E3E7EB37AC426257B59446D9 /* libPods-Density.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1735ABD5EE36A5B19CE94893 /* libPods-Density.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +63,20 @@
 		7662A03A2657A476008E8731 /* DensityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DensityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7662A03E2657A476008E8731 /* DensityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DensityUITests.m; sourceTree = "<group>"; };
 		7662A0402657A476008E8731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7662A0662657A4F3008E8731 /* MDChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDChatViewController.m; sourceTree = "<group>"; };
+		7662A0672657A4F3008E8731 /* MDChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDChatViewController.h; sourceTree = "<group>"; };
+		7662A0692657A4F3008E8731 /* MDBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBaseNavigationController.h; sourceTree = "<group>"; };
+		7662A06A2657A4F3008E8731 /* MDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRootViewController.m; sourceTree = "<group>"; };
+		7662A06B2657A4F3008E8731 /* MDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBaseViewController.m; sourceTree = "<group>"; };
+		7662A06C2657A4F3008E8731 /* MDBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBaseTabBarController.m; sourceTree = "<group>"; };
+		7662A06D2657A4F3008E8731 /* MDBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDBaseNavigationController.m; sourceTree = "<group>"; };
+		7662A06E2657A4F3008E8731 /* MDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRootViewController.h; sourceTree = "<group>"; };
+		7662A06F2657A4F3008E8731 /* MDBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBaseTabBarController.h; sourceTree = "<group>"; };
+		7662A0702657A4F3008E8731 /* MDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDBaseViewController.h; sourceTree = "<group>"; };
+		7662A0722657A4F3008E8731 /* MDRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRecordViewController.h; sourceTree = "<group>"; };
+		7662A0732657A4F3008E8731 /* MDRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRecordViewController.m; sourceTree = "<group>"; };
+		7662A0752657A4F3008E8731 /* MDWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDWordViewController.m; sourceTree = "<group>"; };
+		7662A0762657A4F3008E8731 /* MDWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDWordViewController.h; sourceTree = "<group>"; };
 		BC0F6E51069E5B77730111B3 /* Pods-Density.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.release.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.release.xcconfig"; sourceTree = "<group>"; };
 		BF5E900096F4F4DF5476B37D /* Pods-Density.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.debug.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +143,10 @@
 				7662A0252657A476008E8731 /* LaunchScreen.storyboard */,
 				7662A0282657A476008E8731 /* Info.plist */,
 				7662A0292657A476008E8731 /* main.m */,
+				7662A0682657A4F3008E8731 /* BaseController */,
+				7662A0652657A4F3008E8731 /* Chat */,
+				7662A0712657A4F3008E8731 /* Record */,
+				7662A0742657A4F3008E8731 /* Word */,
 			);
 			path = Density;
 			sourceTree = "<group>";
@@ -144,6 +169,48 @@
 			path = DensityUITests;
 			sourceTree = "<group>";
 		};
+		7662A0652657A4F3008E8731 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				7662A0662657A4F3008E8731 /* MDChatViewController.m */,
+				7662A0672657A4F3008E8731 /* MDChatViewController.h */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		7662A0682657A4F3008E8731 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				7662A0692657A4F3008E8731 /* MDBaseNavigationController.h */,
+				7662A06A2657A4F3008E8731 /* MDRootViewController.m */,
+				7662A06B2657A4F3008E8731 /* MDBaseViewController.m */,
+				7662A06C2657A4F3008E8731 /* MDBaseTabBarController.m */,
+				7662A06D2657A4F3008E8731 /* MDBaseNavigationController.m */,
+				7662A06E2657A4F3008E8731 /* MDRootViewController.h */,
+				7662A06F2657A4F3008E8731 /* MDBaseTabBarController.h */,
+				7662A0702657A4F3008E8731 /* MDBaseViewController.h */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		7662A0712657A4F3008E8731 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				7662A0722657A4F3008E8731 /* MDRecordViewController.h */,
+				7662A0732657A4F3008E8731 /* MDRecordViewController.m */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		7662A0742657A4F3008E8731 /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				7662A0752657A4F3008E8731 /* MDWordViewController.m */,
+				7662A0762657A4F3008E8731 /* MDWordViewController.h */,
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
 		78BC5DFC91F7B66A8EBFA3BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +225,6 @@
 				BF5E900096F4F4DF5476B37D /* Pods-Density.debug.xcconfig */,
 				BC0F6E51069E5B77730111B3 /* Pods-Density.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -338,7 +404,14 @@
 				7662A01F2657A473008E8731 /* ViewController.m in Sources */,
 				7662A0192657A473008E8731 /* AppDelegate.m in Sources */,
 				7662A02A2657A476008E8731 /* main.m in Sources */,
+				7662A0772657A4F3008E8731 /* MDChatViewController.m in Sources */,
 				7662A01C2657A473008E8731 /* SceneDelegate.m in Sources */,
+				7662A0782657A4F3008E8731 /* MDRootViewController.m in Sources */,
+				7662A07B2657A4F3008E8731 /* MDBaseNavigationController.m in Sources */,
+				7662A07D2657A4F3008E8731 /* MDWordViewController.m in Sources */,
+				7662A0792657A4F3008E8731 /* MDBaseViewController.m in Sources */,
+				7662A07C2657A4F3008E8731 /* MDRecordViewController.m in Sources */,
+				7662A07A2657A4F3008E8731 /* MDBaseTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
