@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MDBaseTabBarController : UITabBarController
 
+@property (nonatomic, strong) UIScrollView *scrollView;
+
 @end
 
 NS_ASSUME_NONNULL_END
