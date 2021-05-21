@@ -1,0 +1,1 @@
+../../../HYBasicToolKit/HYBasicToolKit/Classes/category/NSString/NSString+HYChineseCharacter.h

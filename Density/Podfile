@@ -1,0 +1,25 @@
+platform :ios, '10.0'
+inhibit_all_warnings!
+
+source 'git@192.168.56.62:iOSComponent/HYComponentSpecs.git'
+source 'https://cdn.cocoapods.org/'
+
+install! 'cocoapods', :warn_for_unused_master_specs_repo => false
+
+target 'Density' do
+
+pod 'ReactiveObjC'
+pod 'Masonry'
+
+#private kit
+pod 'HYVideoPlayerKit'
+pod 'HYEditVideoKit'
+pod 'HYPhotoLibraryKit'
+pod 'HYUploadFileKit'
+pod 'HYBasicToolKit/categoryAll'
+pod 'HYBasicToolKit/toolsAll'
+pod 'HYBasicToolKit/hyMacro'
+pod 'HYAudioPlayerKit'
+
+
+end

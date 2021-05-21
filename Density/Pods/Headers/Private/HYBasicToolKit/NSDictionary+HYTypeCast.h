@@ -1,0 +1,1 @@
+../../../HYBasicToolKit/HYBasicToolKit/Classes/category/NSDictionary/NSDictionary+HYTypeCast.h

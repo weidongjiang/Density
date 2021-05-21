@@ -1,0 +1,1 @@
+../../../HYEditVideoKit/HYEditVideoKit/Classes/editVideo/HYEditVideoThumbnail.h

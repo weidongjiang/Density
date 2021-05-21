@@ -1,0 +1,1 @@
+../../../HYPhotoLibraryKit/HYPhotoLibraryKit/Classes/PhotoLibrary/Tools/HYToolsManager.h

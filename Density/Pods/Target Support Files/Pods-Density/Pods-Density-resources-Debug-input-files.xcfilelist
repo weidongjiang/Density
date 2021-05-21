@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Density/Pods-Density-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/HYEditVideoKit/HYEditVideoKit.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/HYPhotoLibraryKit/HYPhotoLibraryKit.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/HYVideoPlayerKit/HYVideoPlayerKit.bundle
