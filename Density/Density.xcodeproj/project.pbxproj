@@ -22,6 +22,7 @@
 		7662A07D2657A4F3008E8731 /* MDWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0752657A4F3008E8731 /* MDWordViewController.m */; };
 		768192E6265B4B54007DD13F /* MDTabBarTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 768192E5265B4B54007DD13F /* MDTabBarTransitionDelegate.m */; };
 		768192EC265B4B6E007DD13F /* MDTabBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 768192EB265B4B6E007DD13F /* MDTabBarTransition.m */; };
+		768193AB265B915C007DD13F /* MDRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768193AA265B915C007DD13F /* MDRecordTableViewCell.m */; };
 		E3E7EB37AC426257B59446D9 /* libPods-Density.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1735ABD5EE36A5B19CE94893 /* libPods-Density.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,8 @@
 		768192E5265B4B54007DD13F /* MDTabBarTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDTabBarTransitionDelegate.m; sourceTree = "<group>"; };
 		768192EA265B4B6E007DD13F /* MDTabBarTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDTabBarTransition.h; sourceTree = "<group>"; };
 		768192EB265B4B6E007DD13F /* MDTabBarTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDTabBarTransition.m; sourceTree = "<group>"; };
+		768193A9265B915C007DD13F /* MDRecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordTableViewCell.h; sourceTree = "<group>"; };
+		768193AA265B915C007DD13F /* MDRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewCell.m; sourceTree = "<group>"; };
 		BC0F6E51069E5B77730111B3 /* Pods-Density.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.release.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.release.xcconfig"; sourceTree = "<group>"; };
 		BF5E900096F4F4DF5476B37D /* Pods-Density.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.debug.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -285,6 +288,7 @@
 			children = (
 				7662A0722657A4F3008E8731 /* MDRecordViewController.h */,
 				7662A0732657A4F3008E8731 /* MDRecordViewController.m */,
+				768193A8265B913B007DD13F /* RecordTableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -328,6 +332,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		768193A8265B913B007DD13F /* RecordTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				768193A9265B915C007DD13F /* MDRecordTableViewCell.h */,
+				768193AA265B915C007DD13F /* MDRecordTableViewCell.m */,
+			);
+			path = RecordTableViewCell;
 			sourceTree = "<group>";
 		};
 		78BC5DFC91F7B66A8EBFA3BD /* Frameworks */ = {
@@ -520,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				768192EC265B4B6E007DD13F /* MDTabBarTransition.m in Sources */,
+				768193AB265B915C007DD13F /* MDRecordTableViewCell.m in Sources */,
 				7662A0192657A473008E8731 /* AppDelegate.m in Sources */,
 				7662A02A2657A476008E8731 /* main.m in Sources */,
 				768192E6265B4B54007DD13F /* MDTabBarTransitionDelegate.m in Sources */,

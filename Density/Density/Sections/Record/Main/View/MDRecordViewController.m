@@ -6,8 +6,12 @@
 //
 
 #import "MDRecordViewController.h"
+#import "MDRecordTableViewCell.h"
 
-@interface MDRecordViewController ()
+@interface MDRecordViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic, strong) UIView *navigationView;
+@property (nonatomic, strong) UITableView                         *recordTableView; ///<
+@property (nonatomic, strong) NSArray                         *dataArray; ///<
 
 @end
 
@@ -20,6 +24,14 @@
 
     [self _addNavigationView];
     
+    self.recordTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, KHYHiddenStatusNavbarHeight, KHYScreenWidth, KHYScreenHeight-kHYTabBarHeight-KHYHiddenStatusNavbarHeight)];
+    self.recordTableView.backgroundColor = [UIColor hy_colorWithHex:@"#f7f7f7"];
+    self.recordTableView.separatorStyle = UITableViewCellSelectionStyleNone;
+    self.recordTableView.delegate = self;
+    self.recordTableView.dataSource = self;
+    [self.view addSubview:self.recordTableView];
+
+    
     
 }
 
@@ -27,6 +39,7 @@
     self.navigationController.navigationBar.hidden = YES;
 
     UIView *navigationView = [[UIView alloc] init];
+    self.navigationView = navigationView;
     navigationView.backgroundColor = [UIColor hy_colorWithHex:@"#ffffff"];
     [self.view addSubview:navigationView];
     [navigationView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -45,8 +58,37 @@
         make.bottom.equalTo(navigationView).offset(-15);
     }];
     
+    
 }
 
 
+#pragma mark - Table view data source
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 20;//self.dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    MDRecordTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MDRecordTableViewCellID];
+    if (cell == nil) {
+        cell = [[MDRecordTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MDRecordTableViewCellID];
+    }
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return MDRecordTableViewCellHeight;
+}
+
+- (NSArray *)dataArray {
+    if (!_dataArray) {
+        _dataArray = [[NSArray alloc] init];
+    }
+    return _dataArray;
+}
 
 @end
