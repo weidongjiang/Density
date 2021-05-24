@@ -131,17 +131,12 @@
 		7662A0162657A473008E8731 /* Density */ = {
 			isa = PBXGroup;
 			children = (
-				7662A0172657A473008E8731 /* AppDelegate.h */,
-				7662A0182657A473008E8731 /* AppDelegate.m */,
-				7662A0232657A476008E8731 /* Assets.xcassets */,
-				7662A0252657A476008E8731 /* LaunchScreen.storyboard */,
-				7662A0282657A476008E8731 /* Info.plist */,
-				7662A0292657A476008E8731 /* main.m */,
-				7662A0D32657C89C008E8731 /* common */,
-				7662A0682657A4F3008E8731 /* BaseController */,
-				7662A0652657A4F3008E8731 /* Chat */,
-				7662A0712657A4F3008E8731 /* Record */,
-				7662A0742657A4F3008E8731 /* Word */,
+				7681931E265B576E007DD13F /* MainInfos */,
+				7681931D265B574C007DD13F /* Tools */,
+				7681931C265B573C007DD13F /* Sections */,
+				7681931B265B5733007DD13F /* Commons */,
+				7681931A265B572B007DD13F /* Resource */,
+				76819319265B56EF007DD13F /* Base */,
 			);
 			path = Density;
 			sourceTree = "<group>";
@@ -176,14 +171,9 @@
 		7662A0682657A4F3008E8731 /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
+				7681932A265B5878007DD13F /* BaseTabBar */,
 				7662A0702657A4F3008E8731 /* MDBaseViewController.h */,
 				7662A06B2657A4F3008E8731 /* MDBaseViewController.m */,
-				7662A06F2657A4F3008E8731 /* MDBaseTabBarController.h */,
-				7662A06C2657A4F3008E8731 /* MDBaseTabBarController.m */,
-				768192E4265B4B54007DD13F /* MDTabBarTransitionDelegate.h */,
-				768192E5265B4B54007DD13F /* MDTabBarTransitionDelegate.m */,
-				768192EA265B4B6E007DD13F /* MDTabBarTransition.h */,
-				768192EB265B4B6E007DD13F /* MDTabBarTransition.m */,
 				7662A0692657A4F3008E8731 /* MDBaseNavigationController.h */,
 				7662A06D2657A4F3008E8731 /* MDBaseNavigationController.m */,
 				7662A06E2657A4F3008E8731 /* MDRootViewController.h */,
@@ -210,12 +200,70 @@
 			path = Word;
 			sourceTree = "<group>";
 		};
-		7662A0D32657C89C008E8731 /* common */ = {
+		76819319265B56EF007DD13F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7662A0682657A4F3008E8731 /* BaseController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7681931A265B572B007DD13F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7662A0232657A476008E8731 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7681931B265B5733007DD13F /* Commons */ = {
 			isa = PBXGroup;
 			children = (
 				7662A0D42657C8D5008E8731 /* MDPrefixHeader.pch */,
 			);
-			path = common;
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		7681931C265B573C007DD13F /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				7662A0652657A4F3008E8731 /* Chat */,
+				7662A0712657A4F3008E8731 /* Record */,
+				7662A0742657A4F3008E8731 /* Word */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		7681931D265B574C007DD13F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		7681931E265B576E007DD13F /* MainInfos */ = {
+			isa = PBXGroup;
+			children = (
+				7662A0172657A473008E8731 /* AppDelegate.h */,
+				7662A0182657A473008E8731 /* AppDelegate.m */,
+				7662A0252657A476008E8731 /* LaunchScreen.storyboard */,
+				7662A0282657A476008E8731 /* Info.plist */,
+				7662A0292657A476008E8731 /* main.m */,
+			);
+			path = MainInfos;
+			sourceTree = "<group>";
+		};
+		7681932A265B5878007DD13F /* BaseTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7662A06F2657A4F3008E8731 /* MDBaseTabBarController.h */,
+				7662A06C2657A4F3008E8731 /* MDBaseTabBarController.m */,
+				768192E4265B4B54007DD13F /* MDTabBarTransitionDelegate.h */,
+				768192E5265B4B54007DD13F /* MDTabBarTransitionDelegate.m */,
+				768192EA265B4B6E007DD13F /* MDTabBarTransition.h */,
+				768192EB265B4B6E007DD13F /* MDTabBarTransition.m */,
+			);
+			path = BaseTabBar;
 			sourceTree = "<group>";
 		};
 		78BC5DFC91F7B66A8EBFA3BD /* Frameworks */ = {
@@ -585,8 +633,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZPP94SLYH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/jiangweidong/Desktop/demo/Density/Density/Density/common/MDPrefixHeader.pch;
-				INFOPLIST_FILE = Density/Info.plist;
+				GCC_PREFIX_HEADER = /Users/jiangweidong/Desktop/demo/Density/Density/Density/Commons/MDPrefixHeader.pch;
+				INFOPLIST_FILE = Density/MainInfos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,8 +654,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZPP94SLYH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/jiangweidong/Desktop/demo/Density/Density/Density/common/MDPrefixHeader.pch;
-				INFOPLIST_FILE = Density/Info.plist;
+				GCC_PREFIX_HEADER = /Users/jiangweidong/Desktop/demo/Density/Density/Density/Commons/MDPrefixHeader.pch;
+				INFOPLIST_FILE = Density/MainInfos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
