@@ -176,8 +176,7 @@
 		7662A0682657A4F3008E8731 /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
-				7662A0692657A4F3008E8731 /* MDBaseNavigationController.h */,
-				7662A06A2657A4F3008E8731 /* MDRootViewController.m */,
+				7662A0702657A4F3008E8731 /* MDBaseViewController.h */,
 				7662A06B2657A4F3008E8731 /* MDBaseViewController.m */,
 				7662A06F2657A4F3008E8731 /* MDBaseTabBarController.h */,
 				7662A06C2657A4F3008E8731 /* MDBaseTabBarController.m */,
@@ -185,9 +184,10 @@
 				768192E5265B4B54007DD13F /* MDTabBarTransitionDelegate.m */,
 				768192EA265B4B6E007DD13F /* MDTabBarTransition.h */,
 				768192EB265B4B6E007DD13F /* MDTabBarTransition.m */,
+				7662A0692657A4F3008E8731 /* MDBaseNavigationController.h */,
 				7662A06D2657A4F3008E8731 /* MDBaseNavigationController.m */,
 				7662A06E2657A4F3008E8731 /* MDRootViewController.h */,
-				7662A0702657A4F3008E8731 /* MDBaseViewController.h */,
+				7662A06A2657A4F3008E8731 /* MDRootViewController.m */,
 			);
 			path = BaseController;
 			sourceTree = "<group>";
