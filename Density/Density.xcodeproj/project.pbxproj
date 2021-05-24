@@ -20,6 +20,8 @@
 		7662A07B2657A4F3008E8731 /* MDBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A06D2657A4F3008E8731 /* MDBaseNavigationController.m */; };
 		7662A07C2657A4F3008E8731 /* MDRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0732657A4F3008E8731 /* MDRecordViewController.m */; };
 		7662A07D2657A4F3008E8731 /* MDWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0752657A4F3008E8731 /* MDWordViewController.m */; };
+		768192E6265B4B54007DD13F /* MDTabBarTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 768192E5265B4B54007DD13F /* MDTabBarTransitionDelegate.m */; };
+		768192EC265B4B6E007DD13F /* MDTabBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 768192EB265B4B6E007DD13F /* MDTabBarTransition.m */; };
 		E3E7EB37AC426257B59446D9 /* libPods-Density.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1735ABD5EE36A5B19CE94893 /* libPods-Density.a */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,10 @@
 		7662A0752657A4F3008E8731 /* MDWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDWordViewController.m; sourceTree = "<group>"; };
 		7662A0762657A4F3008E8731 /* MDWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDWordViewController.h; sourceTree = "<group>"; };
 		7662A0D42657C8D5008E8731 /* MDPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPrefixHeader.pch; sourceTree = "<group>"; };
+		768192E4265B4B54007DD13F /* MDTabBarTransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDTabBarTransitionDelegate.h; sourceTree = "<group>"; };
+		768192E5265B4B54007DD13F /* MDTabBarTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDTabBarTransitionDelegate.m; sourceTree = "<group>"; };
+		768192EA265B4B6E007DD13F /* MDTabBarTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDTabBarTransition.h; sourceTree = "<group>"; };
+		768192EB265B4B6E007DD13F /* MDTabBarTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDTabBarTransition.m; sourceTree = "<group>"; };
 		BC0F6E51069E5B77730111B3 /* Pods-Density.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.release.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.release.xcconfig"; sourceTree = "<group>"; };
 		BF5E900096F4F4DF5476B37D /* Pods-Density.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.debug.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +181,10 @@
 				7662A06B2657A4F3008E8731 /* MDBaseViewController.m */,
 				7662A06F2657A4F3008E8731 /* MDBaseTabBarController.h */,
 				7662A06C2657A4F3008E8731 /* MDBaseTabBarController.m */,
+				768192E4265B4B54007DD13F /* MDTabBarTransitionDelegate.h */,
+				768192E5265B4B54007DD13F /* MDTabBarTransitionDelegate.m */,
+				768192EA265B4B6E007DD13F /* MDTabBarTransition.h */,
+				768192EB265B4B6E007DD13F /* MDTabBarTransition.m */,
 				7662A06D2657A4F3008E8731 /* MDBaseNavigationController.m */,
 				7662A06E2657A4F3008E8731 /* MDRootViewController.h */,
 				7662A0702657A4F3008E8731 /* MDBaseViewController.h */,
@@ -397,8 +407,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768192EC265B4B6E007DD13F /* MDTabBarTransition.m in Sources */,
 				7662A0192657A473008E8731 /* AppDelegate.m in Sources */,
 				7662A02A2657A476008E8731 /* main.m in Sources */,
+				768192E6265B4B54007DD13F /* MDTabBarTransitionDelegate.m in Sources */,
 				7662A0772657A4F3008E8731 /* MDChatViewController.m in Sources */,
 				7662A0782657A4F3008E8731 /* MDRootViewController.m in Sources */,
 				7662A07B2657A4F3008E8731 /* MDBaseNavigationController.m in Sources */,
