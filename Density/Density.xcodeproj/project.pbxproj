@@ -23,6 +23,14 @@
 		768192E6265B4B54007DD13F /* MDTabBarTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 768192E5265B4B54007DD13F /* MDTabBarTransitionDelegate.m */; };
 		768192EC265B4B6E007DD13F /* MDTabBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 768192EB265B4B6E007DD13F /* MDTabBarTransition.m */; };
 		768193AB265B915C007DD13F /* MDRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768193AA265B915C007DD13F /* MDRecordTableViewCell.m */; };
+		768193B4265B96C2007DD13F /* MDRecordTableViewCellTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 768193B3265B96C2007DD13F /* MDRecordTableViewCellTitleView.m */; };
+		768193BB265B9C97007DD13F /* MDScanImageAndVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 768193BA265B9C97007DD13F /* MDScanImageAndVideoView.m */; };
+		768193C4265B9E92007DD13F /* MDRecordTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 768193C3265B9E92007DD13F /* MDRecordTableViewModel.m */; };
+		768193CA265B9EBF007DD13F /* MDRecordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 768193C9265B9EBF007DD13F /* MDRecordViewModel.m */; };
+		768193D0265B9ED1007DD13F /* MDRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 768193CF265B9ED1007DD13F /* MDRecordModel.m */; };
+		768193D6265BA3C6007DD13F /* MDRecordTableViewCellInterflowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 768193D5265BA3C6007DD13F /* MDRecordTableViewCellInterflowView.m */; };
+		768193E2265BA460007DD13F /* MDRecordTableViewCellInputBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 768193E1265BA460007DD13F /* MDRecordTableViewCellInputBoxView.m */; };
+		768193E9265BA55A007DD13F /* MDRecordCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 768193E8265BA55A007DD13F /* MDRecordCommentView.m */; };
 		E3E7EB37AC426257B59446D9 /* libPods-Density.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1735ABD5EE36A5B19CE94893 /* libPods-Density.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +87,22 @@
 		768192EB265B4B6E007DD13F /* MDTabBarTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDTabBarTransition.m; sourceTree = "<group>"; };
 		768193A9265B915C007DD13F /* MDRecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordTableViewCell.h; sourceTree = "<group>"; };
 		768193AA265B915C007DD13F /* MDRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewCell.m; sourceTree = "<group>"; };
+		768193B2265B96C2007DD13F /* MDRecordTableViewCellTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordTableViewCellTitleView.h; sourceTree = "<group>"; };
+		768193B3265B96C2007DD13F /* MDRecordTableViewCellTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewCellTitleView.m; sourceTree = "<group>"; };
+		768193B9265B9C97007DD13F /* MDScanImageAndVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDScanImageAndVideoView.h; sourceTree = "<group>"; };
+		768193BA265B9C97007DD13F /* MDScanImageAndVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDScanImageAndVideoView.m; sourceTree = "<group>"; };
+		768193C2265B9E92007DD13F /* MDRecordTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordTableViewModel.h; sourceTree = "<group>"; };
+		768193C3265B9E92007DD13F /* MDRecordTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewModel.m; sourceTree = "<group>"; };
+		768193C8265B9EBF007DD13F /* MDRecordViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordViewModel.h; sourceTree = "<group>"; };
+		768193C9265B9EBF007DD13F /* MDRecordViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordViewModel.m; sourceTree = "<group>"; };
+		768193CE265B9ED1007DD13F /* MDRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordModel.h; sourceTree = "<group>"; };
+		768193CF265B9ED1007DD13F /* MDRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordModel.m; sourceTree = "<group>"; };
+		768193D4265BA3C6007DD13F /* MDRecordTableViewCellInterflowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordTableViewCellInterflowView.h; sourceTree = "<group>"; };
+		768193D5265BA3C6007DD13F /* MDRecordTableViewCellInterflowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewCellInterflowView.m; sourceTree = "<group>"; };
+		768193E0265BA460007DD13F /* MDRecordTableViewCellInputBoxView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordTableViewCellInputBoxView.h; sourceTree = "<group>"; };
+		768193E1265BA460007DD13F /* MDRecordTableViewCellInputBoxView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewCellInputBoxView.m; sourceTree = "<group>"; };
+		768193E7265BA55A007DD13F /* MDRecordCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordCommentView.h; sourceTree = "<group>"; };
+		768193E8265BA55A007DD13F /* MDRecordCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordCommentView.m; sourceTree = "<group>"; };
 		BC0F6E51069E5B77730111B3 /* Pods-Density.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.release.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.release.xcconfig"; sourceTree = "<group>"; };
 		BF5E900096F4F4DF5476B37D /* Pods-Density.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.debug.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -272,6 +296,8 @@
 		76819381265B8659007DD13F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				768193CE265B9ED1007DD13F /* MDRecordModel.h */,
+				768193CF265B9ED1007DD13F /* MDRecordModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,6 +305,10 @@
 		76819382265B866F007DD13F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				768193C2265B9E92007DD13F /* MDRecordTableViewModel.h */,
+				768193C3265B9E92007DD13F /* MDRecordTableViewModel.m */,
+				768193C8265B9EBF007DD13F /* MDRecordViewModel.h */,
+				768193C9265B9EBF007DD13F /* MDRecordViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -286,6 +316,8 @@
 		76819383265B8676007DD13F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				768193E6265BA534007DD13F /* CommentView */,
+				768193B8265B9C5E007DD13F /* ScanImageAndVideo */,
 				7662A0722657A4F3008E8731 /* MDRecordViewController.h */,
 				7662A0732657A4F3008E8731 /* MDRecordViewController.m */,
 				768193A8265B913B007DD13F /* RecordTableViewCell */,
@@ -339,8 +371,32 @@
 			children = (
 				768193A9265B915C007DD13F /* MDRecordTableViewCell.h */,
 				768193AA265B915C007DD13F /* MDRecordTableViewCell.m */,
+				768193B2265B96C2007DD13F /* MDRecordTableViewCellTitleView.h */,
+				768193B3265B96C2007DD13F /* MDRecordTableViewCellTitleView.m */,
+				768193D4265BA3C6007DD13F /* MDRecordTableViewCellInterflowView.h */,
+				768193D5265BA3C6007DD13F /* MDRecordTableViewCellInterflowView.m */,
+				768193E0265BA460007DD13F /* MDRecordTableViewCellInputBoxView.h */,
+				768193E1265BA460007DD13F /* MDRecordTableViewCellInputBoxView.m */,
 			);
 			path = RecordTableViewCell;
+			sourceTree = "<group>";
+		};
+		768193B8265B9C5E007DD13F /* ScanImageAndVideo */ = {
+			isa = PBXGroup;
+			children = (
+				768193B9265B9C97007DD13F /* MDScanImageAndVideoView.h */,
+				768193BA265B9C97007DD13F /* MDScanImageAndVideoView.m */,
+			);
+			path = ScanImageAndVideo;
+			sourceTree = "<group>";
+		};
+		768193E6265BA534007DD13F /* CommentView */ = {
+			isa = PBXGroup;
+			children = (
+				768193E7265BA55A007DD13F /* MDRecordCommentView.h */,
+				768193E8265BA55A007DD13F /* MDRecordCommentView.m */,
+			);
+			path = CommentView;
 			sourceTree = "<group>";
 		};
 		78BC5DFC91F7B66A8EBFA3BD /* Frameworks */ = {
@@ -535,14 +591,22 @@
 				768192EC265B4B6E007DD13F /* MDTabBarTransition.m in Sources */,
 				768193AB265B915C007DD13F /* MDRecordTableViewCell.m in Sources */,
 				7662A0192657A473008E8731 /* AppDelegate.m in Sources */,
+				768193D6265BA3C6007DD13F /* MDRecordTableViewCellInterflowView.m in Sources */,
 				7662A02A2657A476008E8731 /* main.m in Sources */,
+				768193E2265BA460007DD13F /* MDRecordTableViewCellInputBoxView.m in Sources */,
 				768192E6265B4B54007DD13F /* MDTabBarTransitionDelegate.m in Sources */,
+				768193D0265B9ED1007DD13F /* MDRecordModel.m in Sources */,
 				7662A0772657A4F3008E8731 /* MDChatViewController.m in Sources */,
 				7662A0782657A4F3008E8731 /* MDRootViewController.m in Sources */,
 				7662A07B2657A4F3008E8731 /* MDBaseNavigationController.m in Sources */,
+				768193C4265B9E92007DD13F /* MDRecordTableViewModel.m in Sources */,
 				7662A07D2657A4F3008E8731 /* MDWordViewController.m in Sources */,
+				768193CA265B9EBF007DD13F /* MDRecordViewModel.m in Sources */,
 				7662A0792657A4F3008E8731 /* MDBaseViewController.m in Sources */,
+				768193B4265B96C2007DD13F /* MDRecordTableViewCellTitleView.m in Sources */,
 				7662A07C2657A4F3008E8731 /* MDRecordViewController.m in Sources */,
+				768193BB265B9C97007DD13F /* MDScanImageAndVideoView.m in Sources */,
+				768193E9265BA55A007DD13F /* MDRecordCommentView.m in Sources */,
 				7662A07A2657A4F3008E8731 /* MDBaseTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
