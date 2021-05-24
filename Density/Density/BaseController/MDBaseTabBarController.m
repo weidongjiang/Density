@@ -21,7 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _subControllerCount = self.viewControllers.count;
 
     self.tabBarTrasitionDelegate = [[MDTabBarTransitionDelegate alloc] init];
     self.delegate = _tabBarTrasitionDelegate;
@@ -46,6 +45,8 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    self.subControllerCount = self.viewControllers.count;
+
 }
 
 
