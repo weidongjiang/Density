@@ -185,8 +185,8 @@
 		7662A0712657A4F3008E8731 /* Record */ = {
 			isa = PBXGroup;
 			children = (
-				7662A0722657A4F3008E8731 /* MDRecordViewController.h */,
-				7662A0732657A4F3008E8731 /* MDRecordViewController.m */,
+				7681938B265B87D5007DD13F /* Secondary */,
+				7681938A265B87CC007DD13F /* Main */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -264,6 +264,70 @@
 				768192EB265B4B6E007DD13F /* MDTabBarTransition.m */,
 			);
 			path = BaseTabBar;
+			sourceTree = "<group>";
+		};
+		76819381265B8659007DD13F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76819382265B866F007DD13F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		76819383265B8676007DD13F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7662A0722657A4F3008E8731 /* MDRecordViewController.h */,
+				7662A0732657A4F3008E8731 /* MDRecordViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7681938A265B87CC007DD13F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				76819383265B8676007DD13F /* View */,
+				76819382265B866F007DD13F /* ViewModel */,
+				76819381265B8659007DD13F /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7681938B265B87D5007DD13F /* Secondary */ = {
+			isa = PBXGroup;
+			children = (
+				7681938E265B87EE007DD13F /* Model */,
+				7681938D265B87E9007DD13F /* View */,
+				7681938C265B87E2007DD13F /* ViewModel */,
+			);
+			path = Secondary;
+			sourceTree = "<group>";
+		};
+		7681938C265B87E2007DD13F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7681938D265B87E9007DD13F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7681938E265B87EE007DD13F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		78BC5DFC91F7B66A8EBFA3BD /* Frameworks */ = {
@@ -635,6 +699,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/jiangweidong/Desktop/demo/Density/Density/Density/Commons/MDPrefixHeader.pch;
 				INFOPLIST_FILE = Density/MainInfos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -656,6 +721,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/jiangweidong/Desktop/demo/Density/Density/Density/Commons/MDPrefixHeader.pch;
 				INFOPLIST_FILE = Density/MainInfos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

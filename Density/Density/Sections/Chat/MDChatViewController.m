@@ -15,20 +15,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor redColor];
 
+    [self _addNavigationView];
 }
 
-/*
-#pragma mark - Navigation
+- (void)_addNavigationView {
+    self.navigationController.navigationBar.hidden = YES;
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    UIView *navigationView = [[UIView alloc] init];
+    navigationView.backgroundColor = [UIColor hy_colorWithHex:@"#ffffff"];
+    [self.view addSubview:navigationView];
+    [navigationView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.equalTo(self.view);
+        make.width.mas_equalTo(KHYScreenWidth);
+        make.height.mas_equalTo(KHYHiddenStatusNavbarHeight);
+    }];
+    
+    UILabel *navigationView_tileLabel = [[UILabel alloc] init];
+    navigationView_tileLabel.text = @"聊天";
+    navigationView_tileLabel.textColor = [UIColor hy_colorWithHex:@"#000000"];
+    navigationView_tileLabel.font = [UIFont hy_mediumFontSize:20 sizeRatio:1];
+    [navigationView addSubview:navigationView_tileLabel];
+    [navigationView_tileLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(navigationView).offset(15);
+        make.bottom.equalTo(navigationView).offset(-15);
+    }];
+    
 }
-*/
+
 
 @end

@@ -21,7 +21,7 @@ PODS:
   - HYAudioPlayerKit (1.0.5):
     - HYBasicToolKit/hyMacro
     - HYNetworkKit
-  - HYBasicToolKit/categoryAll (1.5.4):
+  - HYBasicToolKit/categoryAll (1.5.6):
     - EasyDarkMode
     - HYBasicToolKit/categoryNSArray
     - HYBasicToolKit/categoryNSDate
@@ -39,67 +39,70 @@ PODS:
     - HYBasicToolKit/categoryUIView
     - HYBasicToolKit/hyTypeCastUtil
     - SDWebImage
-  - HYBasicToolKit/categoryNSArray (1.5.4):
+  - HYBasicToolKit/categoryNSArray (1.5.6):
     - EasyDarkMode
     - HYBasicToolKit/categoryNSFileManager
     - HYBasicToolKit/hyTypeCastUtil
     - SDWebImage
-  - HYBasicToolKit/categoryNSDate (1.5.4):
+  - HYBasicToolKit/categoryNSDate (1.5.6):
     - EasyDarkMode
     - HYBasicToolKit/categoryNSDateFormatter
     - SDWebImage
-  - HYBasicToolKit/categoryNSDateFormatter (1.5.4):
+  - HYBasicToolKit/categoryNSDateFormatter (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryNSDictionary (1.5.4):
+  - HYBasicToolKit/categoryNSDictionary (1.5.6):
     - EasyDarkMode
     - HYBasicToolKit/categoryNSFileManager
     - HYBasicToolKit/categoryNSString
     - HYBasicToolKit/hyTypeCastUtil
     - SDWebImage
-  - HYBasicToolKit/categoryNSFileManager (1.5.4):
+  - HYBasicToolKit/categoryNSFileManager (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryNSObject (1.5.4):
+  - HYBasicToolKit/categoryNSObject (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryNSString (1.5.4):
+  - HYBasicToolKit/categoryNSString (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUIButton (1.5.4):
+  - HYBasicToolKit/categoryUIButton (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUIColor (1.5.4):
+  - HYBasicToolKit/categoryUIColor (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUIFont (1.5.4):
+  - HYBasicToolKit/categoryUIFont (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUIImage (1.5.4):
+  - HYBasicToolKit/categoryUIImage (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUINavigationController (1.5.4):
+  - HYBasicToolKit/categoryUINavigationController (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUIResponder (1.5.4):
+  - HYBasicToolKit/categoryUIResponder (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUIView (1.5.4):
+  - HYBasicToolKit/categoryUIView (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/hyMacro (1.5.4):
+  - HYBasicToolKit/hyBasicToolKitHeader (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/hyMBProgressHUD (1.5.4):
+  - HYBasicToolKit/hyMacro (1.5.6):
+    - EasyDarkMode
+    - SDWebImage
+  - HYBasicToolKit/hyMBProgressHUD (1.5.6):
     - EasyDarkMode
     - HYBasicToolKit/categoryUIColor
     - SDWebImage
-  - HYBasicToolKit/hyTypeCastUtil (1.5.4):
+  - HYBasicToolKit/hyTypeCastUtil (1.5.6):
     - EasyDarkMode
     - HYBasicToolKit/categoryNSObject
     - HYBasicToolKit/categoryNSString
     - SDWebImage
-  - HYBasicToolKit/toolsAll (1.5.4):
+  - HYBasicToolKit/toolsAll (1.5.6):
     - EasyDarkMode
     - HYBasicToolKit/toolsHYFilePathTool
     - HYBasicToolKit/toolsHYGCDUtilsTool
@@ -109,30 +112,30 @@ PODS:
     - HYBasicToolKit/toolsHYUUHelpersTool
     - HYBasicToolKit/toolsHYWeakProxyTool
     - SDWebImage
-  - HYBasicToolKit/toolsHYFilePathTool (1.5.4):
+  - HYBasicToolKit/toolsHYFilePathTool (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/toolsHYGCDUtilsTool (1.5.4):
+  - HYBasicToolKit/toolsHYGCDUtilsTool (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/toolsHYLocationTool (1.5.4):
+  - HYBasicToolKit/toolsHYLocationTool (1.5.6):
     - EasyDarkMode
     - HYBasicToolKit/toolsHYUserDefaultTool
     - SDWebImage
-  - HYBasicToolKit/toolsHYUserDefaultTool (1.5.4):
+  - HYBasicToolKit/toolsHYUserDefaultTool (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/toolsHYUtilitiesTools (1.5.4):
+  - HYBasicToolKit/toolsHYUtilitiesTools (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/toolsHYUUHelpersTool (1.5.4):
+  - HYBasicToolKit/toolsHYUUHelpersTool (1.5.6):
     - EasyDarkMode
     - HYBasicToolKit/categoryNSString
     - SDWebImage
-  - HYBasicToolKit/toolsHYWeakProxyTool (1.5.4):
+  - HYBasicToolKit/toolsHYWeakProxyTool (1.5.6):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/wkWebView (1.5.4):
+  - HYBasicToolKit/wkWebView (1.5.6):
     - EasyDarkMode
     - HYBasicToolKit/categoryUIColor
     - HYBasicToolKit/categoryUIFont
@@ -177,6 +180,7 @@ PODS:
 DEPENDENCIES:
   - HYAudioPlayerKit
   - HYBasicToolKit/categoryAll
+  - HYBasicToolKit/hyBasicToolKitHeader
   - HYBasicToolKit/hyMacro
   - HYBasicToolKit/toolsAll
   - HYEditVideoKit
@@ -210,7 +214,7 @@ SPEC CHECKSUMS:
   AliyunOSSiOS: 13173e9eaf05d3816315319876025de3028ea31d
   EasyDarkMode: 4800f1f5eb4bda8161bac1aeb20e45480fccbf2e
   HYAudioPlayerKit: 1208f8a4a3e6f7d0a1dac70788d8ae35c3df8f1b
-  HYBasicToolKit: 8dea66410f4d23d3037ffc65f7ef4602d5f78221
+  HYBasicToolKit: 04a103f26981980e5362d0f321c21b156f8fd653
   HYEditVideoKit: 7141260159267bc19ddadf29b2408fd4f398750b
   HYNetworkKit: 6fadbc53dc5c82395deabedf9f146c62104e37b4
   HYPhotoLibraryKit: 0a105c29b51debbdb49087f73ec9242e78b0a992
@@ -222,6 +226,6 @@ SPEC CHECKSUMS:
   VODUpload: 2c8ac654ceda839dda97a92023a270041dd9901e
   XHNetworkCache: a5a22941471edf6ed08b2e7cf2ec0d800959ca37
 
-PODFILE CHECKSUM: c91ca8952a1df6c35a178c97e79984b0684173aa
+PODFILE CHECKSUM: 7759ec54e30feb4d3c4afede4573c16162abffb8
 
 COCOAPODS: 1.10.1

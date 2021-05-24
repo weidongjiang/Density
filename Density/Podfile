@@ -19,6 +19,7 @@ pod 'HYUploadFileKit'
 pod 'HYBasicToolKit/categoryAll'
 pod 'HYBasicToolKit/toolsAll'
 pod 'HYBasicToolKit/hyMacro'
+pod 'HYBasicToolKit/hyBasicToolKitHeader'
 pod 'HYAudioPlayerKit'
 
 
