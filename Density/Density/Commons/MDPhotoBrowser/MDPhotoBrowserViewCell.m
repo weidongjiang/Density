@@ -46,3 +46,5 @@
     return _imageView;
 }
 @end
+
+NSString * _Nonnull const MDPhotoBrowserViewCellID = @"MDPhotoBrowserViewCellID";

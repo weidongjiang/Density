@@ -10,6 +10,7 @@
 #import "MDPhotoBrowserView.h"
 
 #import "MDRecordTableViewCell1.h"
+#import "MDRecordTableViewPhotoBrowserCell.h"
 
 @interface MDRecordViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UIView *navigationView;
@@ -74,12 +75,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    MDRecordTableViewCell1 *cell = [tableView dequeueReusableCellWithIdentifier:MDRecordTableViewCellID];
+    MDRecordTableViewPhotoBrowserCell *cell = [tableView dequeueReusableCellWithIdentifier:MDRecordTableViewPhotoBrowserCellID];
     if (cell == nil) {
-        cell = [[MDRecordTableViewCell1 alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MDRecordTableViewCellID];
+        cell = [[MDRecordTableViewPhotoBrowserCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MDRecordTableViewPhotoBrowserCellID];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    [cell setbrowserViewData];
+    
+    MDPhotoBrowserModel *model = [[MDPhotoBrowserModel alloc] init];
+    [cell updateRecordModel:model];
     
     return cell;
 }

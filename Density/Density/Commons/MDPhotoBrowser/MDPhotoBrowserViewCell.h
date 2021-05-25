@@ -8,6 +8,9 @@
 #import <UIKit/UIKit.h>
 #import "MDPhotoBrowserModel.h"
 
+
+extern NSString * _Nonnull const MDPhotoBrowserViewCellID;
+
 NS_ASSUME_NONNULL_BEGIN
 @class MDPhotoBrowserViewCell;
 

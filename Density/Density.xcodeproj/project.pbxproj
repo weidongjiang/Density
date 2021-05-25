@@ -37,6 +37,8 @@
 		76819448265CD65D007DD13F /* MDRecordTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 76819447265CD65D007DD13F /* MDRecordTableViewCell1.m */; };
 		76819472265CE1DB007DD13F /* MDPhotoBrowserViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76819471265CE1DB007DD13F /* MDPhotoBrowserViewCell.m */; };
 		76819478265CF469007DD13F /* XNLoopBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76819476265CF469007DD13F /* XNLoopBannerView.m */; };
+		768194A2265D109B007DD13F /* MDRecordTableViewBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768194A1265D109B007DD13F /* MDRecordTableViewBaseCell.m */; };
+		768194A8265D1257007DD13F /* MDRecordTableViewPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768194A7265D1257007DD13F /* MDRecordTableViewPhotoBrowserCell.m */; };
 		E3E7EB37AC426257B59446D9 /* libPods-Density.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1735ABD5EE36A5B19CE94893 /* libPods-Density.a */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +123,10 @@
 		76819471265CE1DB007DD13F /* MDPhotoBrowserViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPhotoBrowserViewCell.m; sourceTree = "<group>"; };
 		76819476265CF469007DD13F /* XNLoopBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNLoopBannerView.m; sourceTree = "<group>"; };
 		76819477265CF469007DD13F /* XNLoopBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNLoopBannerView.h; sourceTree = "<group>"; };
+		768194A0265D109B007DD13F /* MDRecordTableViewBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordTableViewBaseCell.h; sourceTree = "<group>"; };
+		768194A1265D109B007DD13F /* MDRecordTableViewBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewBaseCell.m; sourceTree = "<group>"; };
+		768194A6265D1257007DD13F /* MDRecordTableViewPhotoBrowserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordTableViewPhotoBrowserCell.h; sourceTree = "<group>"; };
+		768194A7265D1257007DD13F /* MDRecordTableViewPhotoBrowserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewPhotoBrowserCell.m; sourceTree = "<group>"; };
 		BC0F6E51069E5B77730111B3 /* Pods-Density.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.release.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.release.xcconfig"; sourceTree = "<group>"; };
 		BF5E900096F4F4DF5476B37D /* Pods-Density.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.debug.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -397,6 +403,10 @@
 				768193D5265BA3C6007DD13F /* MDRecordTableViewCellInterflowView.m */,
 				768193E0265BA460007DD13F /* MDRecordTableViewCellInputBoxView.h */,
 				768193E1265BA460007DD13F /* MDRecordTableViewCellInputBoxView.m */,
+				768194A0265D109B007DD13F /* MDRecordTableViewBaseCell.h */,
+				768194A1265D109B007DD13F /* MDRecordTableViewBaseCell.m */,
+				768194A6265D1257007DD13F /* MDRecordTableViewPhotoBrowserCell.h */,
+				768194A7265D1257007DD13F /* MDRecordTableViewPhotoBrowserCell.m */,
 			);
 			path = RecordTableViewCell;
 			sourceTree = "<group>";
@@ -631,6 +641,7 @@
 				768192E6265B4B54007DD13F /* MDTabBarTransitionDelegate.m in Sources */,
 				768193D0265B9ED1007DD13F /* MDRecordModel.m in Sources */,
 				7662A0772657A4F3008E8731 /* MDChatViewController.m in Sources */,
+				768194A2265D109B007DD13F /* MDRecordTableViewBaseCell.m in Sources */,
 				7662A0782657A4F3008E8731 /* MDRootViewController.m in Sources */,
 				7662A07B2657A4F3008E8731 /* MDBaseNavigationController.m in Sources */,
 				76819472265CE1DB007DD13F /* MDPhotoBrowserViewCell.m in Sources */,
@@ -640,6 +651,7 @@
 				76819420265BB452007DD13F /* MDPhotoBrowserConfigure.m in Sources */,
 				76819478265CF469007DD13F /* XNLoopBannerView.m in Sources */,
 				7662A0792657A4F3008E8731 /* MDBaseViewController.m in Sources */,
+				768194A8265D1257007DD13F /* MDRecordTableViewPhotoBrowserCell.m in Sources */,
 				768193B4265B96C2007DD13F /* MDRecordTableViewCellTitleView.m in Sources */,
 				7662A07C2657A4F3008E8731 /* MDRecordViewController.m in Sources */,
 				768193E9265BA55A007DD13F /* MDRecordCommentView.m in Sources */,
