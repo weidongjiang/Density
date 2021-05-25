@@ -74,9 +74,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    MDRecordTableViewCell1 *cell = [tableView dequeueReusableCellWithIdentifier:MDRecordTableViewCellID];
+    MDRecordTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MDRecordTableViewCellID];
     if (cell == nil) {
-        cell = [[MDRecordTableViewCell1 alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MDRecordTableViewCellID];
+        cell = [[MDRecordTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MDRecordTableViewCellID];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [cell setbrowserViewData];

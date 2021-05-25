@@ -88,24 +88,24 @@
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
 
-    if (0 >= scrollView.contentOffset.x) {
-        [self collectionViewScrollToRealPage:self.collectionViewDataArray.count];
-    } else if (ceil((self.collectionViewDataArray.count + 1) * scrollView.frame.size.width) <= ceil(scrollView.contentOffset.x)) {
-        [self collectionViewScrollToRealPage:1];
-    } else {
-        _currentPage = ceil(scrollView.contentOffset.x / scrollView.frame.size.width) - 1;
-    }
+//    if (0 >= scrollView.contentOffset.x) {
+//        [self collectionViewScrollToRealPage:self.collectionViewDataArray.count];
+//    } else if (ceil((self.collectionViewDataArray.count + 1) * scrollView.frame.size.width) <= ceil(scrollView.contentOffset.x)) {
+//        [self collectionViewScrollToRealPage:1];
+//    } else {
+//        _currentPage = ceil(scrollView.contentOffset.x / scrollView.frame.size.width) - 1;
+//    }
     
         HYDebugLog(@"scrollViewWillBeginDragging scrollView.contentOffset.x---%f",scrollView.contentOffset.x);
 
     HYDebugLog(@"scrollViewWillBeginDragging currentPage---%ld",(long)self.currentPage);
     
-//    if (self.collectionViewDataArray.count > 1) {
-//        self.currentPage = self.currentPage + 1;
+    if (self.collectionViewDataArray.count > 1) {
+        self.currentPage = self.currentPage + 1;
 //        HYDebugLog(@"scrollViewWillBeginDragging currentPage--1-%ld",(long)self.currentPage);
-//
-//        [self.collectionView setContentOffset:CGPointMake(self.currentPage * self.collectionView.frame.size.width, 0) animated:NO];
-//    }
+
+        [self.collectionView setContentOffset:CGPointMake(self.currentPage * self.collectionView.frame.size.width, 0) animated:NO];
+    }
     
 }
 
