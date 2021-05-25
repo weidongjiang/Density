@@ -7,6 +7,7 @@
 
 #import "MDRecordViewController.h"
 #import "MDRecordTableViewCell.h"
+#import "MDPhotoBrowserView.h"
 
 @interface MDRecordViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UIView *navigationView;
@@ -20,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor blueColor];
+//    self.view.backgroundColor = [UIColor blueColor];
 
     [self _addNavigationView];
     
@@ -34,6 +35,7 @@
     
     
 }
+
 
 - (void)_addNavigationView {
     self.navigationController.navigationBar.hidden = YES;
@@ -77,6 +79,7 @@
     if (cell == nil) {
         cell = [[MDRecordTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MDRecordTableViewCellID];
     }
+    [cell setbrowserViewData];
     return cell;
 }
 

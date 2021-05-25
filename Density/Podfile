@@ -10,6 +10,7 @@ target 'Density' do
 
 pod 'ReactiveObjC'
 pod 'Masonry'
+pod 'SDWebImage'
 
 #private kit
 pod 'HYVideoPlayerKit'

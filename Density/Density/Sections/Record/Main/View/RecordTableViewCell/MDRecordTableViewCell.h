@@ -15,6 +15,8 @@ extern CGFloat const MDRecordTableViewCellHeight;
 
 @interface MDRecordTableViewCell : UITableViewCell
 
+- (void)setbrowserViewData;
+
 @end
 
 NS_ASSUME_NONNULL_END

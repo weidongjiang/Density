@@ -189,6 +189,7 @@ DEPENDENCIES:
   - HYVideoPlayerKit
   - Masonry
   - ReactiveObjC
+  - SDWebImage
 
 SPEC REPOS:
   "git@192.168.56.62:iOSComponent/HYComponentSpecs.git":
@@ -226,6 +227,6 @@ SPEC CHECKSUMS:
   VODUpload: 2c8ac654ceda839dda97a92023a270041dd9901e
   XHNetworkCache: a5a22941471edf6ed08b2e7cf2ec0d800959ca37
 
-PODFILE CHECKSUM: 7759ec54e30feb4d3c4afede4573c16162abffb8
+PODFILE CHECKSUM: b9ab67dcaea5a6728690bb1763ab30f62e06a84b
 
 COCOAPODS: 1.10.1
