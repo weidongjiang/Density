@@ -31,9 +31,6 @@
     self.recordTableView.delegate = self;
     self.recordTableView.dataSource = self;
     [self.view addSubview:self.recordTableView];
-
-    
-    
 }
 
 
@@ -80,6 +77,7 @@
         cell = [[MDRecordTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MDRecordTableViewCellID];
     }
     [cell setbrowserViewData];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 

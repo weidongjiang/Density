@@ -96,20 +96,7 @@
 }
 
 - (void)setbrowserViewData {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
-//        MDPhotoBrowserModel *browserModel = [[MDPhotoBrowserModel alloc] init];
-        NSArray *data = @[@"http://aop.huoying666.com/images/20210517/89cc040611e30a18b213968e730ec54d/89cc040611.jpg_home-image-1080",@"http://aop.huoying666.com/images/20210517/717c720781140b7bc3e85c6f40f0cedd/717c720781.jpg_home-image-1080",@"http://aop.huoying666.com/images/20210517/a75465a833b1cf4a8a90104f616ad34c/a75465a833.jpg_home-image-1080",@"http://aop.huoying666.com/images/20210517/717c720781140b7bc3e85c6f40f0cedd/717c720781.jpg_home-image-1080",@"http://aop.huoying666.com/images/20210517/7d61308436204de9d6231d44039a44c2/7d61308436.jpg_home-image-1080",@"http://aop.huoying666.com/images/20210513/8096db985aef973f4eb43934ec1a5d9d/8096db985a.jpg_home-image-1080"];
-//        CGFloat scanView_h = 200;
-//        [self.browserView mas_remakeConstraints:^(MASConstraintMaker *make) {
-//                make.top.equalTo(self.titleView.mas_bottom);
-//                make.left.right.equalTo(self.backImageView);
-//                make.height.mas_equalTo(scanView_h);
-//        }];
-//
-//        [self.browserView reloadWithImageUrls:data];
-    });
-    
+
 }
 
 @end
