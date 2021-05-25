@@ -30,7 +30,7 @@
     UIPanGestureRecognizer *panGr = [[UIPanGestureRecognizer alloc] init];
     [panGr addTarget:self action:@selector(handlerPanGr:)];
     
-//    [self.view addGestureRecognizer:panGr];
+    [self.view addGestureRecognizer:panGr];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -44,6 +44,8 @@
     self.collectionView.dataSource = self;
     self.collectionView.showsVerticalScrollIndicator = NO;
     self.collectionView.showsHorizontalScrollIndicator = NO;
+    self.collectionView.pagingEnabled = YES;
+    self.collectionView.bounces = NO;
     [self.contentView addSubview:self.collectionView];
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.contentView);
@@ -81,59 +83,14 @@
 
 }
 
+
+
 #pragma mark - UIScrollViewDelegate
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    
-}
-
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-
-//    if (0 >= scrollView.contentOffset.x) {
-//        [self collectionViewScrollToRealPage:self.collectionViewDataArray.count];
-//    } else if (ceil((self.collectionViewDataArray.count + 1) * scrollView.frame.size.width) <= ceil(scrollView.contentOffset.x)) {
-//        [self collectionViewScrollToRealPage:1];
-//    } else {
-//        _currentPage = ceil(scrollView.contentOffset.x / scrollView.frame.size.width) - 1;
-//    }
-    
-        HYDebugLog(@"scrollViewWillBeginDragging scrollView.contentOffset.x---%f",scrollView.contentOffset.x);
-
-    HYDebugLog(@"scrollViewWillBeginDragging currentPage---%ld",(long)self.currentPage);
-    
-    if (self.collectionViewDataArray.count > 1) {
-        self.currentPage = self.currentPage + 1;
-//        HYDebugLog(@"scrollViewWillBeginDragging currentPage--1-%ld",(long)self.currentPage);
-
-        [self.collectionView setContentOffset:CGPointMake(self.currentPage * self.collectionView.frame.size.width, 0) animated:NO];
-    }
-    
-}
-
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset API_AVAILABLE(ios(5.0)) {
-    HYDebugLog(@"scrollViewWillEndDragging");
-
-}
-
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-    HYDebugLog(@"scrollViewDidEndDragging");
-
-}
-
-- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
-    HYDebugLog(@"scrollViewWillBeginDecelerating");
-
-}
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    HYDebugLog(@"scrollViewDidEndDecelerating");
-
-}
-
-
-
 
 
 - (void)collectionViewScrollToRealPage:(NSInteger)page {
-    [self setCurrentPage:page - 1 animated:NO];
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:page inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];
+
 }
 
 - (void)setCurrentPage:(NSInteger)currentPage animated:(BOOL)animated {

@@ -20,7 +20,10 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.imageView = [[UIImageView alloc] init];
+        self.imageView.userInteractionEnabled = YES;
         [self.contentView addSubview:self.imageView];
+        UIPanGestureRecognizer *panGr = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlerImageViewPanGesture:)];
+        [self.imageView addGestureRecognizer:panGr];
     }
     return self;
 }
@@ -29,7 +32,29 @@
     [super layoutSubviews];
     self.imageView.frame = self.contentView.frame;
 }
+- (void)handlerImageViewPanGesture:(UIPanGestureRecognizer *)pan {
+    switch (pan.state) {
+        case UIGestureRecognizerStateBegan:
+        {
 
+        }
+            break;
+            
+        case UIGestureRecognizerStateChanged: {
+            
+        }
+            break;
+            
+        case UIGestureRecognizerStateEnded:
+        {
+//            [self scrollToNext];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
 @end
 
 
@@ -67,7 +92,7 @@ static NSString *CellIdentifier = @"XNLoopBannerViewCell";
         [self prefetchImages];
         
         [self addSubview:self.collectionView];
-//        [self addSubview:self.pageControl];
+        [self addSubview:self.pageControl];
         
         [self setup];
         
@@ -288,6 +313,7 @@ static NSString *CellIdentifier = @"XNLoopBannerViewCell";
                                              collectionViewLayout:self.flowLayout];
         _collectionView.backgroundColor = [UIColor clearColor];
         _collectionView.pagingEnabled = YES;
+        _collectionView.bounces = NO;
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
