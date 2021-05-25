@@ -31,7 +31,6 @@
     if (self = [super initWithStyle: style reuseIdentifier:reuseIdentifier]){
         self.backgroundColor = [UIColor clearColor];
         [self setUpUI];
-        [self setEditing:YES animated:YES];
     }
     return self;
 }
@@ -54,11 +53,9 @@
             make.height.mas_equalTo(titleView_h);
     }];
     
-    NSArray *data = @[@"http://aop.huoying666.com/images/20210517/89cc040611e30a18b213968e730ec54d/89cc040611.jpg_home-image-1080",@"http://aop.huoying666.com/images/20210517/717c720781140b7bc3e85c6f40f0cedd/717c720781.jpg_home-image-1080",@"http://aop.huoying666.com/images/20210517/a75465a833b1cf4a8a90104f616ad34c/a75465a833.jpg_home-image-1080",@"http://aop.huoying666.com/images/20210517/717c720781140b7bc3e85c6f40f0cedd/717c720781.jpg_home-image-1080",@"http://aop.huoying666.com/images/20210517/7d61308436204de9d6231d44039a44c2/7d61308436.jpg_home-image-1080",@"http://aop.huoying666.com/images/20210513/8096db985aef973f4eb43934ec1a5d9d/8096db985a.jpg_home-image-1080"];
     
     CGFloat scanView_h = 200;
-    self.browserView = [[MDPhotoBrowserView alloc] initWithFrame:CGRectMake(0, 0, self.backImageView.hy_width, scanView_h) imageUrls:data];
-    self.browserView.autoScroll = NO;
+    self.browserView = [[MDPhotoBrowserView alloc] initWithFrame:CGRectMake(0, 0, self.backImageView.hy_width, scanView_h)];
     [self.backImageView addSubview:self.browserView];
     [self.browserView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.titleView.mas_bottom);
@@ -96,7 +93,41 @@
 }
 
 - (void)setbrowserViewData {
+//    NSArray *data = @[,,,,,];
+    
+    NSMutableArray *data = [[NSMutableArray alloc] init];
+    
+    MDPhotoBrowserModel *model_1 = [[MDPhotoBrowserModel alloc] init];
+    model_1.type = MDPhotoBrowserModelTypeImage;
+    model_1.imageUrlString = @"http://aop.huoying666.com/images/20210517/89cc040611e30a18b213968e730ec54d/89cc040611.jpg_home-image-1080";
+    
+    
+    MDPhotoBrowserModel *model_2 = [[MDPhotoBrowserModel alloc] init];
+    model_2.type = MDPhotoBrowserModelTypeImage;
+    model_2.imageUrlString = @"http://aop.huoying666.com/images/20210517/717c720781140b7bc3e85c6f40f0cedd/717c720781.jpg_home-image-1080";
+    
+    MDPhotoBrowserModel *model_3 = [[MDPhotoBrowserModel alloc] init];
+    model_3.type = MDPhotoBrowserModelTypeImage;
+    model_3.imageUrlString = @"http://aop.huoying666.com/images/20210517/a75465a833b1cf4a8a90104f616ad34c/a75465a833.jpg_home-image-1080";
+    MDPhotoBrowserModel *model_4 = [[MDPhotoBrowserModel alloc] init];
+    model_4.type = MDPhotoBrowserModelTypeImage;
+    model_4.imageUrlString = @"http://aop.huoying666.com/images/20210517/717c720781140b7bc3e85c6f40f0cedd/717c720781.jpg_home-image-1080";
+    MDPhotoBrowserModel *model_5 = [[MDPhotoBrowserModel alloc] init];
+    model_5.type = MDPhotoBrowserModelTypeImage;
+    model_5.imageUrlString = @"http://aop.huoying666.com/images/20210517/7d61308436204de9d6231d44039a44c2/7d61308436.jpg_home-image-1080";
+    MDPhotoBrowserModel *model_6 = [[MDPhotoBrowserModel alloc] init];
+    model_6.type = MDPhotoBrowserModelTypeImage;
+    model_6.imageUrlString = @"http://aop.huoying666.com/images/20210513/8096db985aef973f4eb43934ec1a5d9d/8096db985a.jpg_home-image-1080";
+    
 
+    [data hy_addSafeObject:model_1];
+    [data hy_addSafeObject:model_2];
+    [data hy_addSafeObject:model_3];
+    [data hy_addSafeObject:model_4];
+    [data hy_addSafeObject:model_5];
+    [data hy_addSafeObject:model_6];
+
+    self.browserView.browserDataArray = data;
 }
 
 @end

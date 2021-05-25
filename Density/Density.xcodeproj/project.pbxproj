@@ -34,6 +34,8 @@
 		7681941A265BB3F6007DD13F /* MDPhotoBrowserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76819419265BB3F6007DD13F /* MDPhotoBrowserModel.m */; };
 		76819420265BB452007DD13F /* MDPhotoBrowserConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681941F265BB452007DD13F /* MDPhotoBrowserConfigure.m */; };
 		76819429265CA5F3007DD13F /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 76819428265CA5F3007DD13F /* SMPageControl.m */; };
+		76819448265CD65D007DD13F /* MDRecordTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 76819447265CD65D007DD13F /* MDRecordTableViewCell1.m */; };
+		76819472265CE1DB007DD13F /* MDPhotoBrowserViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76819471265CE1DB007DD13F /* MDPhotoBrowserViewCell.m */; };
 		E3E7EB37AC426257B59446D9 /* libPods-Density.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1735ABD5EE36A5B19CE94893 /* libPods-Density.a */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +114,10 @@
 		7681941F265BB452007DD13F /* MDPhotoBrowserConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPhotoBrowserConfigure.m; sourceTree = "<group>"; };
 		76819427265CA5F3007DD13F /* SMPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPageControl.h; sourceTree = "<group>"; };
 		76819428265CA5F3007DD13F /* SMPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPageControl.m; sourceTree = "<group>"; };
+		76819446265CD65D007DD13F /* MDRecordTableViewCell1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordTableViewCell1.h; sourceTree = "<group>"; };
+		76819447265CD65D007DD13F /* MDRecordTableViewCell1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewCell1.m; sourceTree = "<group>"; };
+		76819470265CE1DB007DD13F /* MDPhotoBrowserViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPhotoBrowserViewCell.h; sourceTree = "<group>"; };
+		76819471265CE1DB007DD13F /* MDPhotoBrowserViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPhotoBrowserViewCell.m; sourceTree = "<group>"; };
 		BC0F6E51069E5B77730111B3 /* Pods-Density.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.release.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.release.xcconfig"; sourceTree = "<group>"; };
 		BF5E900096F4F4DF5476B37D /* Pods-Density.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.debug.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -380,6 +386,8 @@
 			children = (
 				768193A9265B915C007DD13F /* MDRecordTableViewCell.h */,
 				768193AA265B915C007DD13F /* MDRecordTableViewCell.m */,
+				76819446265CD65D007DD13F /* MDRecordTableViewCell1.h */,
+				76819447265CD65D007DD13F /* MDRecordTableViewCell1.m */,
 				768193B2265B96C2007DD13F /* MDRecordTableViewCellTitleView.h */,
 				768193B3265B96C2007DD13F /* MDRecordTableViewCellTitleView.m */,
 				768193D4265BA3C6007DD13F /* MDRecordTableViewCellInterflowView.h */,
@@ -406,6 +414,8 @@
 				76819428265CA5F3007DD13F /* SMPageControl.m */,
 				76819412265BB2A8007DD13F /* MDPhotoBrowserView.h */,
 				76819413265BB2A8007DD13F /* MDPhotoBrowserView.m */,
+				76819470265CE1DB007DD13F /* MDPhotoBrowserViewCell.h */,
+				76819471265CE1DB007DD13F /* MDPhotoBrowserViewCell.m */,
 				76819418265BB3F6007DD13F /* MDPhotoBrowserModel.h */,
 				76819419265BB3F6007DD13F /* MDPhotoBrowserModel.m */,
 				7681941E265BB452007DD13F /* MDPhotoBrowserConfigure.h */,
@@ -610,6 +620,7 @@
 				7662A0192657A473008E8731 /* AppDelegate.m in Sources */,
 				768193D6265BA3C6007DD13F /* MDRecordTableViewCellInterflowView.m in Sources */,
 				76819414265BB2A8007DD13F /* MDPhotoBrowserView.m in Sources */,
+				76819448265CD65D007DD13F /* MDRecordTableViewCell1.m in Sources */,
 				7662A02A2657A476008E8731 /* main.m in Sources */,
 				768193E2265BA460007DD13F /* MDRecordTableViewCellInputBoxView.m in Sources */,
 				768192E6265B4B54007DD13F /* MDTabBarTransitionDelegate.m in Sources */,
@@ -617,6 +628,7 @@
 				7662A0772657A4F3008E8731 /* MDChatViewController.m in Sources */,
 				7662A0782657A4F3008E8731 /* MDRootViewController.m in Sources */,
 				7662A07B2657A4F3008E8731 /* MDBaseNavigationController.m in Sources */,
+				76819472265CE1DB007DD13F /* MDPhotoBrowserViewCell.m in Sources */,
 				768193C4265B9E92007DD13F /* MDRecordTableViewModel.m in Sources */,
 				7662A07D2657A4F3008E8731 /* MDWordViewController.m in Sources */,
 				768193CA265B9EBF007DD13F /* MDRecordViewModel.m in Sources */,

@@ -17,7 +17,6 @@ typedef NS_ENUM(NSUInteger, MDPhotoBrowserModelType) {
 @interface MDPhotoBrowserModel : UIView
 
 @property (nonatomic, assign) MDPhotoBrowserModelType type;
-@property (nonatomic, strong) UIImage *image;// 展示图片 或 视频封面
 @property (nonatomic, copy) NSString *imageUrlString;// 展示图片 或 视频封面 url
 @property (nonatomic, copy) NSString *videoUrlString;// 展示视频的播放地址
 
