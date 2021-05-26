@@ -21,18 +21,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
     self.tabBarTrasitionDelegate = [[MDTabBarTransitionDelegate alloc] init];
-    self.delegate = _tabBarTrasitionDelegate;
+    self.tabBarTrasitionDelegate.interactive = YES;
+    self.delegate = self.tabBarTrasitionDelegate;
     
     self.tabBar.tintColor = [UIColor greenColor];
 
     UIPanGestureRecognizer *panGr = [[UIPanGestureRecognizer alloc] init];
     [panGr addTarget:self action:@selector(handlerPanGr:)];
-    
     [self.view addGestureRecognizer:panGr];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(viewControllershandlerPanNotification:) name:@"KViewControllershandlerPanNotification" object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

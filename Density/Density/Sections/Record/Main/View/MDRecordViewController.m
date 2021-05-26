@@ -8,8 +8,6 @@
 #import "MDRecordViewController.h"
 #import "MDRecordTableViewCell.h"
 #import "MDPhotoBrowserView.h"
-
-#import "MDRecordTableViewCell1.h"
 #import "MDRecordTableViewPhotoBrowserCell.h"
 
 @interface MDRecordViewController ()<UITableViewDelegate,UITableViewDataSource>

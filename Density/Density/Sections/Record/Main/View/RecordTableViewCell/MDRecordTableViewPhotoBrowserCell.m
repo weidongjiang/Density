@@ -111,14 +111,14 @@
     if (self.currentPage + 1 == self.collectionViewDataArray.count && self.isScrollViewCanDragging) {
         NSMutableDictionary *info = [NSMutableDictionary dictionary];
         [info hy_setSafeObject:@"right" forKey:@"Dragging"];
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"KViewControllershandlerPanNotification" object:nil userInfo:info];
+//        [[NSNotificationCenter defaultCenter] postNotificationName:@"KViewControllershandlerPanNotification" object:nil userInfo:info];
         self.isScrollViewCanDragging = NO;
     }else if (self.currentPage + 1 < self.collectionViewDataArray.count && self.currentPage > 0){
         self.isScrollViewCanDragging = YES;
     }else if (self.currentPage == 0 && self.isScrollViewCanDragging) {
         NSMutableDictionary *info = [NSMutableDictionary dictionary];
         [info hy_setSafeObject:@"left" forKey:@"Dragging"];
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"KViewControllershandlerPanNotification" object:nil userInfo:info];
+//        [[NSNotificationCenter defaultCenter] postNotificationName:@"KViewControllershandlerPanNotification" object:nil userInfo:info];
         self.isScrollViewCanDragging = NO;
     }
 }

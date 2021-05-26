@@ -27,5 +27,10 @@
 
     return  anmiator;
 }
-
+- (UIPercentDrivenInteractiveTransition *)interactionController {
+    if (!_interactionController) {
+        _interactionController = [[UIPercentDrivenInteractiveTransition alloc] init];
+    }
+    return _interactionController;
+}
 @end
