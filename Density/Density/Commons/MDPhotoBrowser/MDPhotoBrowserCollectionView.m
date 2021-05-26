@@ -112,7 +112,11 @@
     NSArray *visibleCells = [self.collectionView visibleCells];
     HYDebugLog(@"visibleCells--%@",visibleCells);
     for (MDPhotoBrowserViewCell *cell in visibleCells) {
-        [cell updateVisibleCellsPlay];
+        if (cell.model.type == MDPhotoBrowserModelTypeVideo) {
+            [cell updateVisibleCellsPlay:YES];
+        }else {
+            [[MDPhotoBrowserViewPlayManager sharedManager] pause];
+        }
     }
 }
 

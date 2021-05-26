@@ -8,6 +8,7 @@
 #import "MDPhotoBrowserViewCell.h"
 #import "UIImageView+WebCache.h"
 #import "SDWebImagePrefetcher.h"
+#import "HYVideoPlayView.h"
 
 @interface MDPhotoBrowserViewCell ()
 

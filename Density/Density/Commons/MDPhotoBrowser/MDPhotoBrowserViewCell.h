@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MDPhotoBrowserModel.h"
-
+#import "MDPhotoBrowserViewPlayManager.h"
 
 extern NSString * _Nonnull const MDPhotoBrowserViewCellID;
 
