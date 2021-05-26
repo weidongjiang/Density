@@ -36,6 +36,10 @@
     [self.view addSubview:self.recordTableView];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MDRecordViewControllerViewWillAppear" object:nil userInfo:nil];
+}
 
 - (void)_addNavigationView {
     self.navigationController.navigationBar.hidden = YES;

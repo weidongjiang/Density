@@ -37,6 +37,7 @@
     _model = model;
     
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:model.imageUrlString]];
+    
 }
 
 - (UIImageView *)imageView {

@@ -30,7 +30,9 @@
     UIPanGestureRecognizer *panGr = [[UIPanGestureRecognizer alloc] init];
     [panGr addTarget:self action:@selector(handlerPanGr:)];
     
-//    [self.view addGestureRecognizer:panGr];
+    [self.view addGestureRecognizer:panGr];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(viewControllershandlerPanNotification:) name:@"KViewControllershandlerPanNotification" object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -49,6 +51,20 @@
 
 }
 
+- (void)viewControllershandlerPanNotification:(NSNotification *)noti {
+    HYDebugLog(@"noti--%@",noti);
+    NSString *dragging = [noti.userInfo hy_stringForKey:@"Dragging"];
+    if ([dragging isEqual:@"left"]) {
+        if (self.selectedIndex > 0) {
+            self.selectedIndex -= 1;
+        }
+    }
+    if ([dragging isEqual:@"right"]) {
+        if (self.selectedIndex < self.subControllerCount) {
+            self.selectedIndex += 1;
+        }
+    }
+}
 
 - (void)handlerPanGr:(UIPanGestureRecognizer *)pan {
 

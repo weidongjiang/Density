@@ -14,7 +14,7 @@
 @property (nonatomic, strong) NSMutableArray        *collectionViewDataArray; ///< <#value#>
 
 @property(nonatomic, assign) NSInteger currentPage; //default is 0.
-
+@property (nonatomic, assign) BOOL isScrollViewCanDragging;
 @end
 
 @implementation MDRecordTableViewPhotoBrowserCell
@@ -28,6 +28,8 @@
 
 - (void)setUpUI {
     [super setUpUI];
+    
+    self.isScrollViewCanDragging = YES;
     
     self.flowLayout = [[UICollectionViewFlowLayout alloc] init];
     self.flowLayout.itemSize = CGSizeMake(KCollectionBackView_Width, KCollectionBackView_Height);
@@ -98,7 +100,35 @@
 
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
 
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+//    HYDebugLog(@"scrollViewWillBeginDragging");
+    self.currentPage = ceil(scrollView.contentOffset.x / scrollView.frame.size.width);
+    HYDebugLog(@"scrollViewWillBeginDragging _currentPage %ld",(long)self.currentPage);
+    if (self.currentPage + 1 == self.collectionViewDataArray.count && self.isScrollViewCanDragging) {
+        NSMutableDictionary *info = [NSMutableDictionary dictionary];
+        [info hy_setSafeObject:@"right" forKey:@"Dragging"];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"KViewControllershandlerPanNotification" object:nil userInfo:info];
+        self.isScrollViewCanDragging = NO;
+    }else if (self.currentPage + 1 < self.collectionViewDataArray.count && self.currentPage > 0){
+        self.isScrollViewCanDragging = YES;
+    }else if (self.currentPage == 0 && self.isScrollViewCanDragging) {
+        NSMutableDictionary *info = [NSMutableDictionary dictionary];
+        [info hy_setSafeObject:@"left" forKey:@"Dragging"];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"KViewControllershandlerPanNotification" object:nil userInfo:info];
+        self.isScrollViewCanDragging = NO;
+    }
+}
+
+
+
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    HYDebugLog(@"scrollViewDidEndScrollingAnimation");
+}
 
 
 - (void)setbrowserViewData {

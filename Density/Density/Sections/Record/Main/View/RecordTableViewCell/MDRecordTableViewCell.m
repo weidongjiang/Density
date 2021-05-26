@@ -282,4 +282,4 @@
 
 
 NSString *const MDRecordTableViewCellID = @"MDRecordTableViewCellID";
-CGFloat const MDRecordTableViewCellHeight = 500;
+CGFloat const MDRecordTableViewCellHeight = 515;
