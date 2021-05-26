@@ -7,11 +7,9 @@
 
 #import "MDRecordTableViewCell.h"
 #import "MDRecordTableViewCellTitleView.h"
-#import "MDPhotoBrowserView.h"
 #import "MDRecordTableViewCellInterflowView.h"
 #import "MDRecordCommentView.h"
 #import "MDRecordTableViewCellInputBoxView.h"
-#import "XNLoopBannerView.h"
 #import "MDPhotoBrowserModel.h"
 #import "MDPhotoBrowserViewCell.h"
 
@@ -19,12 +17,9 @@
 
 @property (nonatomic, strong) UIImageView *backImageView;
 @property (nonatomic, strong) MDRecordTableViewCellTitleView *titleView;
-//@property (nonatomic, strong) MDPhotoBrowserView *browserView;
 @property (nonatomic, strong) MDRecordTableViewCellInterflowView *interflowView;
 @property (nonatomic, strong) MDRecordCommentView *commentView;
 @property (nonatomic, strong) MDRecordTableViewCellInputBoxView *inputBoxView;
-
-@property (nonatomic, strong) XNLoopBannerView *bannerView;
 
 @property (nonatomic, strong) UIView        *collectionBackView; ///< <#value#>
 @property (nonatomic, strong) UICollectionViewFlowLayout        *flowLayout; ///< <#value#>

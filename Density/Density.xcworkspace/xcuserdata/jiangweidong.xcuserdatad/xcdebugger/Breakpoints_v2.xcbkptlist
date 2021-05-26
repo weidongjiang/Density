@@ -94,8 +94,8 @@
             filePath = "Density/Sections/Record/Main/View/RecordTableViewCell/MDRecordTableViewCell.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
             landmarkName = "-setUpUICollectionView"
             landmarkType = "7">
          </BreakpointContent>

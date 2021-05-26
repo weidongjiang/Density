@@ -132,13 +132,6 @@
     }
 }
 
-- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
-    HYDebugLog(@"scrollViewDidEndScrollingAnimation");
-    
-    MDPhotoBrowserViewCell *cell = (MDPhotoBrowserViewCell*)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForItem:self.currentPage inSection:0]];
-    
-}
-
 
 - (void)setbrowserViewData {
     
