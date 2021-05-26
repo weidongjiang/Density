@@ -8,7 +8,6 @@
 #import "MDPhotoBrowserViewCell.h"
 #import "UIImageView+WebCache.h"
 #import "SDWebImagePrefetcher.h"
-#import "MDPhotoBrowserViewPlayManager.h"
 
 @interface MDPhotoBrowserViewCell ()
 
@@ -55,11 +54,13 @@
     }
 }
 
-- (void)updateVisibleCellsPlay {
+- (void)updateVisibleCellsPlay:(BOOL)isPlay {
     if (self.model.type == MDPhotoBrowserModelTypeVideo) {
-        [[MDPhotoBrowserViewPlayManager sharedManager] play];
-    }else {
-        
+        if (isPlay) {
+            [[MDPhotoBrowserViewPlayManager sharedManager] play];
+        }else {
+            [[MDPhotoBrowserViewPlayManager sharedManager] pause];
+        }
     }
 }
 
