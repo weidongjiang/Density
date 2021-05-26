@@ -37,8 +37,9 @@
                     superView:(UIView *)superView {
                         if (!self.playView) {
                             self.playView = [[HYVideoPlayView alloc] initWithFrame:CGRectZero url:url context:context];
-                            [superView addSubview:self.playView];
                         }
+    [self.playView removeFromSuperview];
+    [superView addSubview:self.playView];
     [self.playView updatePlayViewFrame:frame];
     [self.playView updatePlayerWithUrl:url];
     [self.playView updatePlayContext:context];
