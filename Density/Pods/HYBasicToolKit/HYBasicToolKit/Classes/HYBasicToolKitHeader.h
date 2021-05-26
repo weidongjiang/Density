@@ -10,72 +10,84 @@
 
 
 ///------------------------- tools -----------------------------
-#import "HYUtilitiesTools.h"
-#import "HYUtilsMacro.h"
-#import "HYGCDUtilsTool.h"
-#import "HYWeakProxyTool.h"
-#import "HYUserDefaultTool.h"
-#import "HYFilePathTool.h"
-#import "HYLocationTool.h"
+#import <HYBasicToolKit/HYUtilitiesTools.h>
+#import <HYBasicToolKit/HYUtilsMacro.h>
+#import <HYBasicToolKit/HYGCDUtilsTool.h>
+#import <HYBasicToolKit/HYWeakProxyTool.h>
+#import <HYBasicToolKit/HYUserDefaultTool.h>
+#import <HYBasicToolKit/HYFilePathTool.h>
+#import <HYBasicToolKit/HYLocationTool.h>
 
 ///------------------------- category -----------------------------
 // NSArray
-#import "NSArray+HYBlocksKit.h"
-#import "NSArray+HYTypeCast.h"
-#import "NSArray+HYUtilities.h"
+#import <HYBasicToolKit/NSArray+HYBlocksKit.h>
+#import <HYBasicToolKit/NSArray+HYTypeCast.h>
+#import <HYBasicToolKit/NSArray+HYUtilities.h>
 
 // NSDate
-#import "NSDate+HYUtilities.h"
+#import <HYBasicToolKit/NSDate+HYUtilities.h>
+
 // NSDateFormatter
-#import "NSDateFormatter+HYUtilities.h"
+#import <HYBasicToolKit/NSDateFormatter+HYUtilities.h>
+
 // NSDictionary
-#import "NSDictionary+HYBlocksKit.h"
-#import "NSDictionary+HYTypeCast.h"
-#import "NSDictionary+HYKeyValue.h"
+#import <HYBasicToolKit/NSDictionary+HYBlocksKit.h>
+#import <HYBasicToolKit/NSDictionary+HYTypeCast.h>
+#import <HYBasicToolKit/NSDictionary+HYKeyValue.h>
+
 // NSFileManager
-#import "NSFileManager+HYUtilities.h"
+#import <HYBasicToolKit/NSFileManager+HYUtilities.h>
+
 // NSObject
-#import "NSObject+HYAssociatedObject.h"
+#import <HYBasicToolKit/NSObject+HYAssociatedObject.h>
+
 // NSString
-#import "NSString+HYHash.h"
-#import "NSString+HYDecimalsCalculation.h"
-#import "NSString+HYChineseCharacter.h"
-#import "NSString+HYSimpleMatching.h"
-#import "NSString+HYString.h"
-#import "NSString+HYUtilities.h"
+#import <HYBasicToolKit/NSString+HYHash.h>
+#import <HYBasicToolKit/NSString+HYDecimalsCalculation.h>
+#import <HYBasicToolKit/NSString+HYChineseCharacter.h>
+#import <HYBasicToolKit/NSString+HYSimpleMatching.h>
+#import <HYBasicToolKit/NSString+HYString.h>
+#import <HYBasicToolKit/NSString+HYUtilities.h>
+
 // UIButton
-#import "UIButton+HYEnlargeTouchArea.h"
-#import "UIButton+HYUtilities.h"
-#import "UIButton+HYImagePosition.h"
+#import <HYBasicToolKit/UIButton+HYEnlargeTouchArea.h>
+#import <HYBasicToolKit/UIButton+HYUtilities.h>
+#import <HYBasicToolKit/UIButton+HYImagePosition.h>
+
 // UIColor
-#import "UIColor+HYUtilities.h"
+#import <HYBasicToolKit/UIColor+HYUtilities.h>
+
 // UIFont
-#import "UIFont+HYUtilities.h"
+#import <HYBasicToolKit/UIFont+HYUtilities.h>
+
 // UIImage
-#import "UIImage+HYCompress.h"
-#import "UIImage+HYBundleImage.h"
-#import "UIImage+HYImageEffects.h"
-#import "UIImage+HYImage.h"
+#import <HYBasicToolKit/UIImage+HYCompress.h>
+#import <HYBasicToolKit/UIImage+HYBundleImage.h>
+#import <HYBasicToolKit/UIImage+HYImageEffects.h>
+#import <HYBasicToolKit/UIImage+HYImage.h>
+
 //UINavigationController
-#import "UINavigationController+FDFullscreenPopGesture.h"
+#import <HYBasicToolKit/UINavigationController+FDFullscreenPopGesture.h>
+
 //UIResponder
-#import "UIResponder+HYCurrentViewController.h"
+#import <HYBasicToolKit/UIResponder+HYCurrentViewController.h>
+
 // UIView
-#import "UIView+HYFrame.h"
-#import "UIView+HYViewRect.h"
-#import "UIView+Toast.h"
+#import <HYBasicToolKit/UIView+HYFrame.h>
+#import <HYBasicToolKit/UIView+HYViewRect.h>
+#import <HYBasicToolKit/UIView+Toast.h>
 
 ///------------------------- common -----------------------------
-#import "MBHUDManager.h"
-#import "MBProgressHUD.h"
-#import "MBProgressHUD+Add.h"
-
+#import <HYBasicToolKit/MBHUDManager.h>
+#import <HYBasicToolKit/MBProgressHUD.h>
+#import <HYBasicToolKit/MBProgressHUD+Add.h>
 
 ///------------------------- macro -----------------------------
-#import "HYUtilsDeviceMacro.h"
-#import "HYUtilsMacro.h"
+#import <HYBasicToolKit/HYUtilsDeviceMacro.h>
+#import <HYBasicToolKit/HYUtilsMacro.h>
+
 ///------------------------- WKWebView -----------------------------
-#import "WKWebViewController.h"
+#import <HYBasicToolKit/WKWebViewController.h>
 
 
 

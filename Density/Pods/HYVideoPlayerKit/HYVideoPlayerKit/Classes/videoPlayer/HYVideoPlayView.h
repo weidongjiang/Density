@@ -32,6 +32,21 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)stop;
 - (void)seekToTime:(double)time;
 
+
+/// 当初始化后需要更新 时调用
+/// @param frame frame description
+- (void)updatePlayViewFrame:(CGRect)frame;
+
+/// 当还是当前播放器，需要更换播放数据源的时候更新,新的数据源从0开始播放
+/// @param url url description
+- (void)updatePlayerWithUrl:(NSURL *)url;
+
+/// 单独更新播放设置
+/// @param context context description
+- (void)updatePlayContext:(HYVideoPlayContext *)context;
+
+/// 只初始化 播放器组件
+- (void)initPlay;
 @end
 
 NS_ASSUME_NONNULL_END

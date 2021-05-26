@@ -8,7 +8,7 @@
 #import "MDPhotoBrowserViewCell.h"
 #import "UIImageView+WebCache.h"
 #import "SDWebImagePrefetcher.h"
-#import "HYVideoPlayView.h"
+#import "MDPhotoBrowserViewPlayManager.h"
 
 @interface MDPhotoBrowserViewCell ()
 
@@ -30,8 +30,12 @@
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self.contentView);
     }];
-//    self.playView = [HYVideoPlayView alloc] initWithFrame:CGRectMake(0, 0, self.contentView.hy_width, self.contentView.hy_height) url:<#(nonnull NSURL *)#> context:<#(nonnull HYVideoPlayContext *)#>
-//    []
+
+    [self.contentView setNeedsUpdateConstraints];
+    [self.contentView updateConstraintsIfNeeded];
+    [self.contentView layoutIfNeeded];
+    
+    
 }
 
 
@@ -39,7 +43,24 @@
     _model = model;
     
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:model.imageUrlString]];
-    
+    if (model.type == MDPhotoBrowserModelTypeVideo) {
+        HYVideoPlayContext *context = [[HYVideoPlayContext alloc] init];
+        context.isShowSliderView = NO;
+        context.isLoopPlay = NO;
+        context.isAutoPlay = NO;
+        [[MDPhotoBrowserViewPlayManager sharedManager] initPlayViewWithFrame:self.contentView.bounds url:[NSURL URLWithString:model.videoUrlString] context:context superView:self.contentView];
+        [[MDPhotoBrowserViewPlayManager sharedManager] pause];
+    }else {
+        
+    }
+}
+
+- (void)updateVisibleCellsPlay {
+    if (self.model.type == MDPhotoBrowserModelTypeVideo) {
+        [[MDPhotoBrowserViewPlayManager sharedManager] play];
+    }else {
+        
+    }
 }
 
 - (UIImageView *)imageView {

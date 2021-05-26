@@ -13,6 +13,7 @@
     if (self = [super init]) {
         _isLoopPlay = NO;
         _isShowSliderView = YES;
+        _isAutoPlay = YES;
     }
     return self;
 }

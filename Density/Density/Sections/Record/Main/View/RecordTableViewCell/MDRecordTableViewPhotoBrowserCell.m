@@ -124,10 +124,19 @@
 }
 
 
-
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSArray *visibleCells = [self.collectionView visibleCells];
+    HYDebugLog(@"visibleCells--%@",visibleCells);
+    for (MDPhotoBrowserViewCell *cell in visibleCells) {
+        [cell updateVisibleCellsPlay];
+    }
+}
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
     HYDebugLog(@"scrollViewDidEndScrollingAnimation");
+    
+    MDPhotoBrowserViewCell *cell = (MDPhotoBrowserViewCell*)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForItem:self.currentPage inSection:0]];
+    
 }
 
 
@@ -157,11 +166,25 @@
     model_6.type = MDPhotoBrowserModelTypeImage;
     model_6.imageUrlString = @"http://aop.huoying666.com/images/20210513/8096db985aef973f4eb43934ec1a5d9d/8096db985a.jpg_home-image-1080";
     
+    MDPhotoBrowserModel *model_7 = [[MDPhotoBrowserModel alloc] init];
+    model_7.type = MDPhotoBrowserModelTypeVideo;
+    model_7.imageUrlString = @"http://aop.huoying666.com/images/20210513/8096db985aef973f4eb43934ec1a5d9d/8096db985a.jpg_home-image-1080";
+    model_7.videoUrlString = @"http://aop.huoying666.com/videos/20210526/73576f49275fccce2fc4e4b08eda7068/73576f4927.mp4";
+    
+    MDPhotoBrowserModel *model_8 = [[MDPhotoBrowserModel alloc] init];
+    model_8.type = MDPhotoBrowserModelTypeVideo;
+    model_8.imageUrlString = @"http://aop.huoying666.com/images/20210517/7d61308436204de9d6231d44039a44c2/7d61308436.jpg_home-image-1080";
+    model_8.videoUrlString = @"https://vd3.bdstatic.com//mda-ma5jqzcy8my15dxk//cae_h264_clips//1609916394//mda-ma5jqzcy8my15dxk.mp4";
+    
+    
+    
 
     [data hy_addSafeObject:model_1];
     [data hy_addSafeObject:model_2];
+    [data hy_addSafeObject:model_7];
     [data hy_addSafeObject:model_3];
     [data hy_addSafeObject:model_4];
+    [data hy_addSafeObject:model_8];
     [data hy_addSafeObject:model_5];
     [data hy_addSafeObject:model_6];
 

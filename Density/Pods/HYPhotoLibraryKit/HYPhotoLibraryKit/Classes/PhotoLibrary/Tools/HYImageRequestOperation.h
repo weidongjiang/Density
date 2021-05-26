@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HYImageRequestOperation : NSOperation
-typedef void(^HYImageRequestCompletedBlock)(UIImage *photo, NSDictionary *info, BOOL isDegraded);
+typedef void(^HYImageRequestCompletedBlock)(UIImage *__nullable photo, NSDictionary *info, BOOL isDegraded);
 typedef void(^HYImageRequestProgressBlock)(double progress, NSError *error, BOOL *stop, NSDictionary *info);
 
 @property (nonatomic, copy, nullable) HYImageRequestCompletedBlock completedBlock;

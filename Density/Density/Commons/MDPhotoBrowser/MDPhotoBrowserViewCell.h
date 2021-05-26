@@ -24,7 +24,7 @@ typedef void(^MDPhotoBrowserViewCellBlock)(UIPanGestureRecognizer *gesture,MDPho
 
 @property (nonatomic, copy) MDPhotoBrowserViewCellBlock gestureCellBlock;
 
-
+- (void)updateVisibleCellsPlay;
 @end
 
 NS_ASSUME_NONNULL_END

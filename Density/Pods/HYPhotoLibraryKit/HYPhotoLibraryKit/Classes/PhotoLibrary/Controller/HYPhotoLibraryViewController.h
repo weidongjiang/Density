@@ -14,7 +14,7 @@
 @interface HYPhotoLibraryViewController : UIViewController
 @property (nonatomic,strong,readonly) UICollectionView *libraryCollectionView;
 @property (strong, nonatomic) HYPhotoLibraryManager *manager;
-@property (nonatomic, copy) void (^selectedComplete)(NSArray* photoMoelArray);
+@property (nonatomic, copy) void (^selectedComplete)(NSArray<HYPhotoModel *>* photoMoelArray);
 
 - (HYPhotoLibraryCell *)currentPreviewCell:(HYPhotoModel *)model;
 - (BOOL)scrollToModel:(HYPhotoModel *)model;

@@ -21,7 +21,7 @@ PODS:
   - HYAudioPlayerKit (1.0.5):
     - HYBasicToolKit/hyMacro
     - HYNetworkKit
-  - HYBasicToolKit/categoryAll (1.5.6):
+  - HYBasicToolKit/categoryAll (1.5.7):
     - EasyDarkMode
     - HYBasicToolKit/categoryNSArray
     - HYBasicToolKit/categoryNSDate
@@ -39,70 +39,70 @@ PODS:
     - HYBasicToolKit/categoryUIView
     - HYBasicToolKit/hyTypeCastUtil
     - SDWebImage
-  - HYBasicToolKit/categoryNSArray (1.5.6):
+  - HYBasicToolKit/categoryNSArray (1.5.7):
     - EasyDarkMode
     - HYBasicToolKit/categoryNSFileManager
     - HYBasicToolKit/hyTypeCastUtil
     - SDWebImage
-  - HYBasicToolKit/categoryNSDate (1.5.6):
+  - HYBasicToolKit/categoryNSDate (1.5.7):
     - EasyDarkMode
     - HYBasicToolKit/categoryNSDateFormatter
     - SDWebImage
-  - HYBasicToolKit/categoryNSDateFormatter (1.5.6):
+  - HYBasicToolKit/categoryNSDateFormatter (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryNSDictionary (1.5.6):
+  - HYBasicToolKit/categoryNSDictionary (1.5.7):
     - EasyDarkMode
     - HYBasicToolKit/categoryNSFileManager
     - HYBasicToolKit/categoryNSString
     - HYBasicToolKit/hyTypeCastUtil
     - SDWebImage
-  - HYBasicToolKit/categoryNSFileManager (1.5.6):
+  - HYBasicToolKit/categoryNSFileManager (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryNSObject (1.5.6):
+  - HYBasicToolKit/categoryNSObject (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryNSString (1.5.6):
+  - HYBasicToolKit/categoryNSString (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUIButton (1.5.6):
+  - HYBasicToolKit/categoryUIButton (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUIColor (1.5.6):
+  - HYBasicToolKit/categoryUIColor (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUIFont (1.5.6):
+  - HYBasicToolKit/categoryUIFont (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUIImage (1.5.6):
+  - HYBasicToolKit/categoryUIImage (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUINavigationController (1.5.6):
+  - HYBasicToolKit/categoryUINavigationController (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUIResponder (1.5.6):
+  - HYBasicToolKit/categoryUIResponder (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/categoryUIView (1.5.6):
+  - HYBasicToolKit/categoryUIView (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/hyBasicToolKitHeader (1.5.6):
+  - HYBasicToolKit/hyBasicToolKitHeader (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/hyMacro (1.5.6):
+  - HYBasicToolKit/hyMacro (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/hyMBProgressHUD (1.5.6):
+  - HYBasicToolKit/hyMBProgressHUD (1.5.7):
     - EasyDarkMode
     - HYBasicToolKit/categoryUIColor
     - SDWebImage
-  - HYBasicToolKit/hyTypeCastUtil (1.5.6):
+  - HYBasicToolKit/hyTypeCastUtil (1.5.7):
     - EasyDarkMode
     - HYBasicToolKit/categoryNSObject
     - HYBasicToolKit/categoryNSString
     - SDWebImage
-  - HYBasicToolKit/toolsAll (1.5.6):
+  - HYBasicToolKit/toolsAll (1.5.7):
     - EasyDarkMode
     - HYBasicToolKit/toolsHYFilePathTool
     - HYBasicToolKit/toolsHYGCDUtilsTool
@@ -112,30 +112,30 @@ PODS:
     - HYBasicToolKit/toolsHYUUHelpersTool
     - HYBasicToolKit/toolsHYWeakProxyTool
     - SDWebImage
-  - HYBasicToolKit/toolsHYFilePathTool (1.5.6):
+  - HYBasicToolKit/toolsHYFilePathTool (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/toolsHYGCDUtilsTool (1.5.6):
+  - HYBasicToolKit/toolsHYGCDUtilsTool (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/toolsHYLocationTool (1.5.6):
+  - HYBasicToolKit/toolsHYLocationTool (1.5.7):
     - EasyDarkMode
     - HYBasicToolKit/toolsHYUserDefaultTool
     - SDWebImage
-  - HYBasicToolKit/toolsHYUserDefaultTool (1.5.6):
+  - HYBasicToolKit/toolsHYUserDefaultTool (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/toolsHYUtilitiesTools (1.5.6):
+  - HYBasicToolKit/toolsHYUtilitiesTools (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/toolsHYUUHelpersTool (1.5.6):
+  - HYBasicToolKit/toolsHYUUHelpersTool (1.5.7):
     - EasyDarkMode
     - HYBasicToolKit/categoryNSString
     - SDWebImage
-  - HYBasicToolKit/toolsHYWeakProxyTool (1.5.6):
+  - HYBasicToolKit/toolsHYWeakProxyTool (1.5.7):
     - EasyDarkMode
     - SDWebImage
-  - HYBasicToolKit/wkWebView (1.5.6):
+  - HYBasicToolKit/wkWebView (1.5.7):
     - EasyDarkMode
     - HYBasicToolKit/categoryUIColor
     - HYBasicToolKit/categoryUIFont
@@ -148,7 +148,7 @@ PODS:
   - HYNetworkKit (1.0.7):
     - AFNetworking (~> 4.0.1)
     - HYBasicToolKit/hyMacro
-  - HYPhotoLibraryKit (1.2.4):
+  - HYPhotoLibraryKit (1.2.5):
     - HYBasicToolKit/categoryUIColor
     - HYBasicToolKit/categoryUIImage
     - HYBasicToolKit/hyMBProgressHUD
@@ -162,7 +162,7 @@ PODS:
     - HYBasicToolKit/categoryNSDictionary
     - HYNetworkKit
     - VODUpload
-  - HYVideoPlayerKit (1.3.4):
+  - HYVideoPlayerKit (1.3.8):
     - HYBasicToolKit/categoryNSDateFormatter
     - HYBasicToolKit/categoryUIImage
     - HYBasicToolKit/categoryUIResponder
@@ -215,12 +215,12 @@ SPEC CHECKSUMS:
   AliyunOSSiOS: 13173e9eaf05d3816315319876025de3028ea31d
   EasyDarkMode: 4800f1f5eb4bda8161bac1aeb20e45480fccbf2e
   HYAudioPlayerKit: 1208f8a4a3e6f7d0a1dac70788d8ae35c3df8f1b
-  HYBasicToolKit: 04a103f26981980e5362d0f321c21b156f8fd653
+  HYBasicToolKit: eac1631127b8b385459c58c3e86f4dcb8772312c
   HYEditVideoKit: 7141260159267bc19ddadf29b2408fd4f398750b
   HYNetworkKit: 6fadbc53dc5c82395deabedf9f146c62104e37b4
-  HYPhotoLibraryKit: 0a105c29b51debbdb49087f73ec9242e78b0a992
+  HYPhotoLibraryKit: 637d8f167b946e632cb77d3d7dca8bb8fe0649ef
   HYUploadFileKit: db1c07f1c1e000dd1cf3b59841b88688ebee2407
-  HYVideoPlayerKit: 8936d8063a4ff26b70c7d44977dd293546ad6d3e
+  HYVideoPlayerKit: b5a61081393124f08916ea0fc64b441a3ea668d2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d

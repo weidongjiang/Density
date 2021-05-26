@@ -31,7 +31,7 @@ static NSString *PLAYBACKLIKRLYTOKEEPUP_KEYPATH = @"playbackLikelyToKeepUp";
 @property (nonatomic, strong) HYVideoPlayContext          *context;
 @property (nonatomic, strong) AVAssetImageGenerator *imageGenerator;
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndicatorView;//!< 菊花
-
+@property (nonatomic, strong) AVPlayerLayer *playerLayer;
 @end
 
 
@@ -42,9 +42,7 @@ static NSString *PLAYBACKLIKRLYTOKEEPUP_KEYPATH = @"playbackLikelyToKeepUp";
         self.playViewFrame = frame;
         self.asset = [AVAsset assetWithURL:url];
         self.context = context;
-        [self initPlayer];
-        [self initUI];
-        [self setCongfin];
+        [self initPlay];
     }
     return self;
 }
@@ -54,9 +52,7 @@ static NSString *PLAYBACKLIKRLYTOKEEPUP_KEYPATH = @"playbackLikelyToKeepUp";
         self.playViewFrame = frame;
         self.asset = asset;
         self.context = context;
-        [self initPlayer];
-        [self initUI];
-        [self setCongfin];
+        [self initPlay];
     }
     return self;
 }
@@ -78,6 +74,7 @@ static NSString *PLAYBACKLIKRLYTOKEEPUP_KEYPATH = @"playbackLikelyToKeepUp";
     self.player = [AVPlayer playerWithPlayerItem:item];
     
     AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
+    self.playerLayer = playerLayer;
     playerLayer.frame = CGRectMake(0, 0, self.playViewFrame.size.width, self.playViewFrame.size.height);
     [self.layer addSublayer:playerLayer];
     
@@ -86,6 +83,34 @@ static NSString *PLAYBACKLIKRLYTOKEEPUP_KEYPATH = @"playbackLikelyToKeepUp";
     
     [self.player.currentItem addObserver:self forKeyPath:STATUS_KEYPATH options:0 context:nil];
 
+}
+
+- (void)updatePlayViewFrame:(CGRect)frame {
+    self.frame = frame;
+    self.playViewFrame = frame;
+    self.playerLayer.frame = CGRectMake(0, 0, self.playViewFrame.size.width, self.playViewFrame.size.height);
+    if (self.context.isShowSliderView) {// 展示的时候才显示
+        self.sliderModuleView.frame = CGRectMake(0, self.playViewFrame.size.height - 40, self.playViewFrame.size.width, 40);
+    }
+}
+
+- (void)updatePlayerWithUrl:(NSURL *)url  {
+    self.asset = [AVAsset assetWithURL:url];
+    NSArray *keys = @[@"tracks",@"duration",@"commonMetadata",@"availableMediaCharacteristicsWithMediaSelectionOptions"];
+    AVPlayerItem *item = [AVPlayerItem playerItemWithAsset:self.asset automaticallyLoadedAssetKeys:keys];
+    [self.player replaceCurrentItemWithPlayerItem:item];
+    [self.player.currentItem addObserver:self forKeyPath:STATUS_KEYPATH options:0 context:nil];
+}
+
+- (void)updatePlayContext:(HYVideoPlayContext *)context {
+    self.context = context;
+}
+
+
+- (void)initPlay {
+    [self initPlayer];
+    [self initUI];
+    [self setCongfin];
 }
 
 - (void)initUI {
@@ -156,9 +181,14 @@ static NSString *PLAYBACKLIKRLYTOKEEPUP_KEYPATH = @"playbackLikelyToKeepUp";
                 
         if (self.player.currentItem.status == AVPlayerItemStatusReadyToPlay) {
             NSLog(@"HYVideoPlayView----observeValueForKeyPath--AVPlayerItemStatusReadyToPlay");
-
-            [self.player play];
-            [self.sliderModuleView videoPlay];
+            if (self.context.isAutoPlay) {
+                [self.player play];
+                [self.sliderModuleView videoPlay];
+            }else {
+                [self.player pause];
+                [self.sliderModuleView videoPause];
+                self.activityIndicatorView.hidden = YES;
+            }
             
             double duration = CMTimeGetSeconds(self.player.currentItem.duration);
             [self.sliderModuleView setPlaySliderTotalTime:duration];
@@ -192,14 +222,12 @@ static NSString *PLAYBACKLIKRLYTOKEEPUP_KEYPATH = @"playbackLikelyToKeepUp";
         [weakSelf.sliderModuleView setPlaySliderCurrentTime:currentTime];
         [weakSelf.sliderModuleView setSliderViewValue:currentTime/duration];
         
-//        NSLog(@"addPlayerItemTimeObserver   currentTime - :%f",currentTime);
-//        NSLog(@"addPlayerItemTimeObserver   startPlayTime - :%f",weakSelf.startPlayTime);
-//        NSLog(@"addPlayerItemTimeObserver   endPlayTime - :%f",weakSelf.endPlayTime);
 
         if (currentTime >= weakSelf.endPlayTime && weakSelf.endPlayTime > 0 && weakSelf.startPlayTime >= 0 && weakSelf.startPlayTime < weakSelf.endPlayTime) {// 截取的区间轮播
             
             [weakSelf _seekToTime:weakSelf.startPlayTime];
             [weakSelf.player play];
+            
         }
         
         if (weakSelf.currentTimeBlock) {

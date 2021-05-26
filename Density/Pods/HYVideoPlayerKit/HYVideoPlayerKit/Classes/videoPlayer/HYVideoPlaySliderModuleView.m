@@ -71,7 +71,7 @@
     
     CGFloat totalTime_w = 45;
     CGFloat totalTime_h = 15;
-    CGFloat totalTime_x = KHYScreenWidth - totalTime_w - interval;
+    CGFloat totalTime_x = moduleView_w - totalTime_w - interval;
     CGFloat totalTime_y = (totalTime_w - totalTime_h)*0.5;
     UILabel *totalTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(totalTime_x, totalTime_y, totalTime_w, totalTime_h)];
     totalTimeLabel.font = [UIFont systemFontOfSize:14];
@@ -80,7 +80,7 @@
     self.totalTimeLabel = totalTimeLabel;
     [self addSubview:totalTimeLabel];
     
-    CGFloat sliderView_w = KHYScreenWidth - playButton_x - playButton_w - interval - currentTimeLabel_w - interval - totalTime_w - interval - interval;
+    CGFloat sliderView_w = moduleView_w - playButton_x - playButton_w - interval - currentTimeLabel_w - interval - totalTime_w - interval - interval;
     CGFloat sliderView_h = 32;
     CGFloat sliderView_x = currentTimeLabel.frame.origin.x + currentTimeLabel.frame.size.width + interval;
     CGFloat sliderView_y = (moduleView_h-sliderView_h)*0.5;
