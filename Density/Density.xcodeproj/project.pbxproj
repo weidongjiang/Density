@@ -36,6 +36,7 @@
 		768194A2265D109B007DD13F /* MDRecordTableViewBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768194A1265D109B007DD13F /* MDRecordTableViewBaseCell.m */; };
 		768194A8265D1257007DD13F /* MDRecordTableViewPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768194A7265D1257007DD13F /* MDRecordTableViewPhotoBrowserCell.m */; };
 		768194DC265DFD2C007DD13F /* MDPhotoBrowserViewPlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 768194DB265DFD2C007DD13F /* MDPhotoBrowserViewPlayManager.m */; };
+		7681954C265E4B5D007DD13F /* MDPhotoBrowserCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681954B265E4B5D007DD13F /* MDPhotoBrowserCollectionView.m */; };
 		E3E7EB37AC426257B59446D9 /* libPods-Density.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1735ABD5EE36A5B19CE94893 /* libPods-Density.a */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +119,8 @@
 		768194A7265D1257007DD13F /* MDRecordTableViewPhotoBrowserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewPhotoBrowserCell.m; sourceTree = "<group>"; };
 		768194DA265DFD2C007DD13F /* MDPhotoBrowserViewPlayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPhotoBrowserViewPlayManager.h; sourceTree = "<group>"; };
 		768194DB265DFD2C007DD13F /* MDPhotoBrowserViewPlayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPhotoBrowserViewPlayManager.m; sourceTree = "<group>"; };
+		7681954A265E4B5D007DD13F /* MDPhotoBrowserCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPhotoBrowserCollectionView.h; sourceTree = "<group>"; };
+		7681954B265E4B5D007DD13F /* MDPhotoBrowserCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPhotoBrowserCollectionView.m; sourceTree = "<group>"; };
 		BC0F6E51069E5B77730111B3 /* Pods-Density.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.release.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.release.xcconfig"; sourceTree = "<group>"; };
 		BF5E900096F4F4DF5476B37D /* Pods-Density.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.debug.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -414,6 +417,8 @@
 			children = (
 				76819470265CE1DB007DD13F /* MDPhotoBrowserViewCell.h */,
 				76819471265CE1DB007DD13F /* MDPhotoBrowserViewCell.m */,
+				7681954A265E4B5D007DD13F /* MDPhotoBrowserCollectionView.h */,
+				7681954B265E4B5D007DD13F /* MDPhotoBrowserCollectionView.m */,
 				76819418265BB3F6007DD13F /* MDPhotoBrowserModel.h */,
 				76819419265BB3F6007DD13F /* MDPhotoBrowserModel.m */,
 				7681941E265BB452007DD13F /* MDPhotoBrowserConfigure.h */,
@@ -630,6 +635,7 @@
 				768193C4265B9E92007DD13F /* MDRecordTableViewModel.m in Sources */,
 				7662A07D2657A4F3008E8731 /* MDWordViewController.m in Sources */,
 				768193CA265B9EBF007DD13F /* MDRecordViewModel.m in Sources */,
+				7681954C265E4B5D007DD13F /* MDPhotoBrowserCollectionView.m in Sources */,
 				76819420265BB452007DD13F /* MDPhotoBrowserConfigure.m in Sources */,
 				768194DC265DFD2C007DD13F /* MDPhotoBrowserViewPlayManager.m in Sources */,
 				7662A0792657A4F3008E8731 /* MDBaseViewController.m in Sources */,
