@@ -6,6 +6,7 @@
 //
 
 #import "MDRecordTableViewBaseCell.h"
+#import "MDPhotoBrowserCollectionView.h"
 
 extern NSString * _Nonnull const MDRecordTableViewPhotoBrowserCellID;
 
@@ -17,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MDRecordTableViewPhotoBrowserCell : MDRecordTableViewBaseCell
 
-@property (nonatomic, strong) UIView        *collectionBackView; ///< <#value#>
+@property (nonatomic, strong) MDPhotoBrowserCollectionView *browserView;
 
 - (void)setUpUI;
 - (void)updateRecordModel:(MDPhotoBrowserModel *)model;

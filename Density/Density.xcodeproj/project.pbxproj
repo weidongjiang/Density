@@ -38,6 +38,7 @@
 		768194DC265DFD2C007DD13F /* MDPhotoBrowserViewPlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 768194DB265DFD2C007DD13F /* MDPhotoBrowserViewPlayManager.m */; };
 		7681954C265E4B5D007DD13F /* MDPhotoBrowserCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681954B265E4B5D007DD13F /* MDPhotoBrowserCollectionView.m */; };
 		76819552265E50B0007DD13F /* MDRecordTableViewInterflowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76819551265E50B0007DD13F /* MDRecordTableViewInterflowCell.m */; };
+		76819558265E5EC3007DD13F /* MDRecordTableViewCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76819557265E5EC3007DD13F /* MDRecordTableViewCommentCell.m */; };
 		E3E7EB37AC426257B59446D9 /* libPods-Density.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1735ABD5EE36A5B19CE94893 /* libPods-Density.a */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +125,8 @@
 		7681954B265E4B5D007DD13F /* MDPhotoBrowserCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPhotoBrowserCollectionView.m; sourceTree = "<group>"; };
 		76819550265E50B0007DD13F /* MDRecordTableViewInterflowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordTableViewInterflowCell.h; sourceTree = "<group>"; };
 		76819551265E50B0007DD13F /* MDRecordTableViewInterflowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewInterflowCell.m; sourceTree = "<group>"; };
+		76819556265E5EC3007DD13F /* MDRecordTableViewCommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordTableViewCommentCell.h; sourceTree = "<group>"; };
+		76819557265E5EC3007DD13F /* MDRecordTableViewCommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewCommentCell.m; sourceTree = "<group>"; };
 		BC0F6E51069E5B77730111B3 /* Pods-Density.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.release.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.release.xcconfig"; sourceTree = "<group>"; };
 		BF5E900096F4F4DF5476B37D /* Pods-Density.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.debug.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -404,6 +407,8 @@
 				768194A7265D1257007DD13F /* MDRecordTableViewPhotoBrowserCell.m */,
 				76819550265E50B0007DD13F /* MDRecordTableViewInterflowCell.h */,
 				76819551265E50B0007DD13F /* MDRecordTableViewInterflowCell.m */,
+				76819556265E5EC3007DD13F /* MDRecordTableViewCommentCell.h */,
+				76819557265E5EC3007DD13F /* MDRecordTableViewCommentCell.m */,
 			);
 			path = RecordTableViewCell;
 			sourceTree = "<group>";
@@ -626,6 +631,7 @@
 				768192EC265B4B6E007DD13F /* MDTabBarTransition.m in Sources */,
 				768193AB265B915C007DD13F /* MDRecordTableViewCell.m in Sources */,
 				7681941A265BB3F6007DD13F /* MDPhotoBrowserModel.m in Sources */,
+				76819558265E5EC3007DD13F /* MDRecordTableViewCommentCell.m in Sources */,
 				76819552265E50B0007DD13F /* MDRecordTableViewInterflowCell.m in Sources */,
 				7662A0192657A473008E8731 /* AppDelegate.m in Sources */,
 				768193D6265BA3C6007DD13F /* MDRecordTableViewCellInterflowView.m in Sources */,

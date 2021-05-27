@@ -8,6 +8,8 @@
 #import "MDRecordViewController.h"
 #import "MDRecordTableViewCell.h"
 #import "MDRecordTableViewPhotoBrowserCell.h"
+#import "MDRecordTableViewInterflowCell.h"
+#import "MDRecordTableViewCommentCell.h"
 
 @interface MDRecordViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UIView *navigationView;
@@ -76,9 +78,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    MDRecordTableViewPhotoBrowserCell *cell = [tableView dequeueReusableCellWithIdentifier:MDRecordTableViewPhotoBrowserCellID];
+    MDRecordTableViewCommentCell *cell = [tableView dequeueReusableCellWithIdentifier:MDRecordTableViewCommentCellID];
     if (cell == nil) {
-        cell = [[MDRecordTableViewPhotoBrowserCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MDRecordTableViewPhotoBrowserCellID];
+        cell = [[MDRecordTableViewCommentCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MDRecordTableViewCommentCellID];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     

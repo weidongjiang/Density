@@ -25,6 +25,24 @@
 - (void)setUpUI {
     [super setUpUI];
     
+    self.interflowView = [[MDRecordTableViewCellInterflowView alloc] init];
+    [self.backImageView addSubview:self.interflowView];
+    [self.interflowView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.browserView.collectionView.mas_bottom);
+            make.left.right.equalTo(self.backImageView);
+            make.height.mas_equalTo(KMDRecordTableViewCellInterflowView_Height);
+    }];
+    
     
 }
+
+- (void)updateRecordModel:(MDPhotoBrowserModel *)model {
+    [super updateRecordModel:model];
+    
+    
+}
+
 @end
+
+
+NSString * _Nonnull const MDRecordTableViewInterflowCellID = @"MDRecordTableViewInterflowCellID";

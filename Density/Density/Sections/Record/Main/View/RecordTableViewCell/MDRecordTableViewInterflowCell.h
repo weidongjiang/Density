@@ -6,10 +6,22 @@
 //
 
 #import "MDRecordTableViewPhotoBrowserCell.h"
+#import "MDRecordTableViewCellInterflowView.h"
+
+extern NSString * _Nonnull const MDRecordTableViewInterflowCellID;
+#define KMDRecordTableViewCellInterflowView_Width KMDRecordTableViewCellbackImageView_Width
+#define KMDRecordTableViewCellInterflowView_Height 30
+
 
 NS_ASSUME_NONNULL_BEGIN
 
+
 @interface MDRecordTableViewInterflowCell : MDRecordTableViewPhotoBrowserCell
+
+@property (nonatomic, strong) MDRecordTableViewCellInterflowView *interflowView;
+
+- (void)setUpUI;
+- (void)updateRecordModel:(MDPhotoBrowserModel *)model;
 
 @end
 

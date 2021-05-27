@@ -6,10 +6,8 @@
 //
 
 #import "MDRecordTableViewPhotoBrowserCell.h"
-#import "MDPhotoBrowserCollectionView.h"
 
 @interface MDRecordTableViewPhotoBrowserCell ()
-@property (nonatomic, strong) MDPhotoBrowserCollectionView *browserView;
 @end
 
 @implementation MDRecordTableViewPhotoBrowserCell
