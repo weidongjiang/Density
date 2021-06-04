@@ -39,6 +39,8 @@
 		7681954C265E4B5D007DD13F /* MDPhotoBrowserCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681954B265E4B5D007DD13F /* MDPhotoBrowserCollectionView.m */; };
 		76819552265E50B0007DD13F /* MDRecordTableViewInterflowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76819551265E50B0007DD13F /* MDRecordTableViewInterflowCell.m */; };
 		76819558265E5EC3007DD13F /* MDRecordTableViewCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76819557265E5EC3007DD13F /* MDRecordTableViewCommentCell.m */; };
+		7681955E265F388F007DD13F /* MDRecordCommentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681955D265F388F007DD13F /* MDRecordCommentViewCell.m */; };
+		76819564265F39F0007DD13F /* MDRecordCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76819563265F39F0007DD13F /* MDRecordCommentModel.m */; };
 		E3E7EB37AC426257B59446D9 /* libPods-Density.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1735ABD5EE36A5B19CE94893 /* libPods-Density.a */; };
 /* End PBXBuildFile section */
 
@@ -127,6 +129,10 @@
 		76819551265E50B0007DD13F /* MDRecordTableViewInterflowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewInterflowCell.m; sourceTree = "<group>"; };
 		76819556265E5EC3007DD13F /* MDRecordTableViewCommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordTableViewCommentCell.h; sourceTree = "<group>"; };
 		76819557265E5EC3007DD13F /* MDRecordTableViewCommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordTableViewCommentCell.m; sourceTree = "<group>"; };
+		7681955C265F388F007DD13F /* MDRecordCommentViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordCommentViewCell.h; sourceTree = "<group>"; };
+		7681955D265F388F007DD13F /* MDRecordCommentViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordCommentViewCell.m; sourceTree = "<group>"; };
+		76819562265F39F0007DD13F /* MDRecordCommentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDRecordCommentModel.h; sourceTree = "<group>"; };
+		76819563265F39F0007DD13F /* MDRecordCommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDRecordCommentModel.m; sourceTree = "<group>"; };
 		BC0F6E51069E5B77730111B3 /* Pods-Density.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.release.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.release.xcconfig"; sourceTree = "<group>"; };
 		BF5E900096F4F4DF5476B37D /* Pods-Density.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Density.debug.xcconfig"; path = "Target Support Files/Pods-Density/Pods-Density.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -418,6 +424,10 @@
 			children = (
 				768193E7265BA55A007DD13F /* MDRecordCommentView.h */,
 				768193E8265BA55A007DD13F /* MDRecordCommentView.m */,
+				7681955C265F388F007DD13F /* MDRecordCommentViewCell.h */,
+				7681955D265F388F007DD13F /* MDRecordCommentViewCell.m */,
+				76819562265F39F0007DD13F /* MDRecordCommentModel.h */,
+				76819563265F39F0007DD13F /* MDRecordCommentModel.m */,
 			);
 			path = CommentView;
 			sourceTree = "<group>";
@@ -632,6 +642,7 @@
 				768193AB265B915C007DD13F /* MDRecordTableViewCell.m in Sources */,
 				7681941A265BB3F6007DD13F /* MDPhotoBrowserModel.m in Sources */,
 				76819558265E5EC3007DD13F /* MDRecordTableViewCommentCell.m in Sources */,
+				7681955E265F388F007DD13F /* MDRecordCommentViewCell.m in Sources */,
 				76819552265E50B0007DD13F /* MDRecordTableViewInterflowCell.m in Sources */,
 				7662A0192657A473008E8731 /* AppDelegate.m in Sources */,
 				768193D6265BA3C6007DD13F /* MDRecordTableViewCellInterflowView.m in Sources */,
@@ -654,6 +665,7 @@
 				768194A8265D1257007DD13F /* MDRecordTableViewPhotoBrowserCell.m in Sources */,
 				768193B4265B96C2007DD13F /* MDRecordTableViewCellTitleView.m in Sources */,
 				7662A07C2657A4F3008E8731 /* MDRecordViewController.m in Sources */,
+				76819564265F39F0007DD13F /* MDRecordCommentModel.m in Sources */,
 				768193E9265BA55A007DD13F /* MDRecordCommentView.m in Sources */,
 				7662A07A2657A4F3008E8731 /* MDBaseTabBarController.m in Sources */,
 			);
